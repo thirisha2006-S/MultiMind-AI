@@ -249,7 +249,8 @@ if 'current_result' in st.session_state:
     
     # Workflow quality
     with metric_cols[0]:
-        quality = result.get('reflection', {}).get('workflow_quality', 0)
+        reflection = result.get('reflection') or {}
+        quality = reflection.get('workflow_quality', 0)
         if isinstance(quality, (int, float)):
             quality_percent = int(quality * 100)
         else:
