@@ -9,3 +9,5 @@ faiss-cpu>=1.8.0
 huggingface-hub>=0.20.0
 sentence-transformers>=2.5.0
 langchain-huggingface>=0.0.1
+mcp>=1.0.0
+streamlit>=1.30.0

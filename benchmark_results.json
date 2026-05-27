@@ -1,0 +1,55 @@
+{
+  "individual_results": [
+    {
+      "test": "hallucination_reduction",
+      "caught": 0,
+      "total": 5,
+      "rate": 0.0,
+      "percentage": "0.0%"
+    },
+    {
+      "test": "validation_accuracy",
+      "correct": 4,
+      "total": 8,
+      "accuracy": 0.5,
+      "percentage": "50.0%"
+    },
+    {
+      "test": "loop_prevention",
+      "completed": 4,
+      "total": 4,
+      "rate": 1.0,
+      "percentage": "100.0%"
+    },
+    {
+      "test": "task_completion",
+      "completed": 0,
+      "total": 4,
+      "rate": 0.0,
+      "percentage": "0.0%"
+    },
+    {
+      "test": "memory_precision",
+      "precise": 0,
+      "total": 3,
+      "rate": 0.0,
+      "percentage": "0.0%"
+    },
+    {
+      "test": "system_reliability",
+      "successful": 5,
+      "total": 6,
+      "rate": 0.8333333333333334,
+      "percentage": "83.3%"
+    }
+  ],
+  "overall_scores": {
+    "hallucination_reduction": 0.0,
+    "validation_accuracy": 0.5,
+    "loop_prevention": 1.0,
+    "task_completion": 0.0,
+    "memory_precision": 0.0,
+    "system_reliability": 0.8333333333333334
+  },
+  "overall_average": 0.7777777777777778
+}

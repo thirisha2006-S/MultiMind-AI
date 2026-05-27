@@ -7,7 +7,7 @@ from typing import Dict, Any, Literal, Optional
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
 from langchain_core.prompts import ChatPromptTemplate
-from tools import get_tavily_tool, python_repl
+from tools import get_tavily_tool, python_repl, get_mcp_tools, mcp_tool_invoker
 from state import SharedState, ValidationResult
 from memory import memory, rag_memory
 from planner import planner_agent
@@ -328,7 +328,37 @@ def coder_agent(state: SharedState) -> Dict[str, Any]:
         code_task = state.get("current_step", "print('Hello, World!')")
     
     try:
-        result = python_repl(code_task)
+        # First check if this is an MCP tool invocation request
+        if code_task.startswith("MCP:"):
+            # Format: MCP:server_name:tool_name:json_arguments
+            parts = code_task.split(":", 3)
+            if len(parts) >= 4:
+                _, server_name, tool_name, json_args = parts
+                try:
+                    import json
+                    args_dict = json.loads(json_args) if json_args else {}
+                    result = mcp_tool_invoker(server_name, tool_name, json_args)
+                    result_data = {
+                        "code_result": result,
+                        "current_step": "mcp_tool_complete",
+                        "next": "supervisor",
+                        "retry_count": 0
+                    }
+                    # Update task index if using plan
+                    if state.get("planner_ran") and state.get("task_plan"):
+                        result_data["current_task_index"] = state.get("current_task_index", 0) + 1
+                    return result_data
+                except Exception as e:
+                    return {
+                        "error": f"MCP tool invocation failed: {str(e)}",
+                        "retry_count": retry_count + 1,
+                        "next": "coder_agent"
+                    }
+            else:
+                # Fallback to regular code execution if MCP format is invalid
+                result = python_repl(code_task)
+        else:
+            result = python_repl(code_task)
         
         result_data = {
             "code_result": result,

@@ -1,12 +1,20 @@
 """
 Tools for the Multi-Agent System.
-Includes Tavily Search and Python REPL tools.
+Includes Tavily Search, Python REPL, and MCP tools.
 """
 
 import os
-from typing import Optional
+from typing import Optional, List, Dict, Any
 from langchain_community.tools import TavilySearchResults
 from langchain_core.tools import tool
+
+# Import MCP integration if available
+try:
+    from mcp_integration import mcp_manager
+    MCP_INTEGRATION_AVAILABLE = True
+except ImportError:
+    MCP_INTEGRATION_AVAILABLE = False
+    mcp_manager = None
 
 
 def get_tavily_search_tool(max_results: int = 3, include_images: bool = False) -> TavilySearchResults:
@@ -84,3 +92,75 @@ def tavily_tool(query: str):
 def python_tool(code: str):
     """Invoke Python REPL tool."""
     return _python_tool.invoke({"code": code})
+
+
+# MCP Tools
+def get_mcp_tools() -> List[Dict[str, Any]]:
+    """Get all available MCP tools."""
+    if not MCP_INTEGRATION_AVAILABLE or not mcp_manager:
+        return []
+    return mcp_manager.get_available_tools()
+
+
+def get_mcp_tool(server_name: str, tool_name: str) -> Optional[Dict[str, Any]]:
+    """Get a specific MCP tool."""
+    if not MCP_INTEGRATION_AVAILABLE or not mcp_manager:
+        return None
+    tool = mcp_manager.get_tool(server_name, tool_name)
+    if tool:
+        return {
+            "name": tool.name,
+            "description": tool.description,
+            "input_schema": tool.input_schema,
+            "server": server_name
+        }
+    return None
+
+
+async def call_mcp_tool(server_name: str, tool_name: str, arguments: Dict[str, Any]) -> Any:
+    """Call an MCP tool."""
+    if not MCP_INTEGRATION_AVAILABLE or not mcp_manager:
+        raise Exception("MCP integration not available")
+    return await mcp_manager.call_tool(server_name, tool_name, arguments)
+
+
+# MCP tool wrapper for LangChain
+@tool
+def mcp_tool_invoker(server_name: str, tool_name: str, arguments: str) -> str:
+    """
+    Invoke an MCP tool.
+    
+    Args:
+        server_name: Name of the MCP server
+        tool_name: Name of the tool to invoke
+        arguments: JSON string of arguments to pass to the tool
+        
+    Returns:
+        Result from the tool invocation
+    """
+    if not MCP_INTEGRATION_AVAILABLE or not mcp_manager:
+        return "Error: MCP integration not available"
+    
+    try:
+        # Parse arguments from JSON string
+        import json
+        args_dict = json.loads(arguments) if arguments else {}
+        
+        # Call the tool (need to handle async)
+        import asyncio
+        try:
+            # Try to get existing event loop
+            loop = asyncio.get_event_loop()
+        except RuntimeError:
+            # Create new event loop if none exists
+            loop = asyncio.new_event_loop()
+            asyncio.set_event_loop(loop)
+        
+        # Run the async function
+        result = loop.run_until_complete(
+            call_mcp_tool(server_name, tool_name, args_dict)
+        )
+        
+        return str(result)
+    except Exception as e:
+        return f"Error invoking MCP tool: {str(e)}"
