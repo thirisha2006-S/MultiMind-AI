@@ -179,8 +179,16 @@ if 'current_result' in st.session_state:
     # Main result display
     st.markdown("### 📋 AI's Answer")
     
-    # Use a nice container for the answer
+    # Use a nice container for the answer - prefer final_answer, fallback to research_data
     with st.container():
+        from agents import is_demo_mode
+        demo_note = ""
+        if is_demo_mode():
+            demo_note = "\n\n*📝 **Demo Mode**: Configure COHERE_API_KEY or OPENAI_API_KEY in .env for real LLM responses*"
+        
+        # Build answer content
+        answer_content = result.get('final_answer') or result.get('research_data') or 'No answer generated'
+        
         st.markdown(f"""
         <div style="
             background-color: #f0f2f6; 
@@ -189,7 +197,7 @@ if 'current_result' in st.session_state:
             border-left: 4px solid #667eea;
             margin: 1rem 0;
         ">
-            {result.get('final_answer', 'No answer generated')}
+            {answer_content}{demo_note}
         </div>
         """, unsafe_allow_html=True)
     

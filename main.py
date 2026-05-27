@@ -12,6 +12,9 @@ from memory import memory, rag_memory
 from observability import start_trace, get_tracer, close_trace
 from mcp_integration import mcp_manager
 
+# Load environment variables from .env file
+load_dotenv()
+
 # Configure logging for observability
 logging.basicConfig(
     level=logging.INFO,
