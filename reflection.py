@@ -5,31 +5,16 @@ Enables the system to learn from its own execution patterns.
 
 import os
 from typing import Dict, Any, List, Optional
-from langchain_cohere import ChatCohere
-from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage, SystemMessage
 from state import SharedState
 from memory import memory, rag_memory
 from observability import trace_agent
-from agents import MockLLM
+from llm_utils import get_llm_instance
 
 
 def get_llm(temperature: float = 0, model: str = "gpt-4"):
-    """Get configured LLM instance - uses Cohere/OpenAI as primary, MockLLM as fallback."""
-    cohere_api_key = os.getenv("COHERE_API_KEY")
-    if cohere_api_key:
-        return ChatCohere(
-            api_key=cohere_api_key,
-            model="command-r",
-            temperature=temperature
-        )
-    
-    api_key = os.getenv("OPENAI_API_KEY")
-    if api_key and api_key != "your_openai_api_key_here":
-        return ChatOpenAI(api_key=api_key, model=model, temperature=temperature)
-    
-    # Demo mode - no valid API key
-    return MockLLM(model="demo")
+    """Get configured LLM instance - delegates to llm_utils."""
+    return get_llm_instance(temperature, model)
 
 
 def get_session_id(state: SharedState) -> str:

@@ -4,91 +4,18 @@ Enhanced agents with Planner integration and improved validation.
 
 import os
 from typing import Dict, Any, Literal, Optional
-from langchain_cohere import ChatCohere
-from langchain_openai import ChatOpenAI
 from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
 from langchain_core.prompts import ChatPromptTemplate
 from tools import get_tavily_tool, python_repl, get_mcp_tools, mcp_tool_invoker
 from state import SharedState, ValidationResult
 from memory import memory, rag_memory
-from planner import planner_agent
 from observability import trace_agent
-
-
-class MockLLM:
-    """Mock LLM for demo mode when no valid API key is available."""
-    
-    def __init__(self, model: str = "demo"):
-        self.model = model
-    
-    def invoke(self, messages):
-        """Return mock responses based on the prompt type."""
-        msg_text = ""
-        for msg in messages:
-            if hasattr(msg, 'content'):
-                msg_text += msg.content.lower()
-        
-        # For classification prompts
-        if "classify" in msg_text or "category" in msg_text:
-            if any(kw in msg_text for kw in ["search", "find", "who", "what", "when", "where", "why", "research", "web"]):
-                return AIMessage(content="research")
-            elif any(kw in msg_text for kw in ["calculate", "compute", "solve", "code", "program", "python"]):
-                return AIMessage(content="coding")
-            else:
-                return AIMessage(content="research")
-        
-        # For validator prompts
-        if "validator" in msg_text or "validate" in msg_text:
-            return AIMessage(content='{"is_valid": true, "confidence": 0.85, "issues": [], "suggestions": ["Demo mode - add API key for real validation"]}')
-        
-        # For reflection prompts
-        if "reflection" in msg_text or "analyze" in msg_text:
-            return AIMessage(content='{"workflow_quality": 0.75, "planning_feedback": "Good execution with clear steps in demo mode", "retrieval_quality": "relevant", "execution_efficiency": "optimal", "memory_updates": ["Demo execution completed"], "next_iteration_tips": ["Add API key for real LLM responses"]}')
-        
-        # For planner prompts
-        if "planning" in msg_text or "plan" in msg_text:
-            return AIMessage(content='{"tasks": [{"id": 1, "type": "research", "description": "Research task", "priority": 1}], "reasoning": "Demo plan for demonstration"}')
-        
-        # Default response
-        return AIMessage(content="Demo mode: No API key configured. The system is working but using mock responses. Add COHERE_API_KEY or OPENAI_API_KEY for real LLM responses.")
-
-
-# Track if we're in demo mode
-_demo_mode = False
+from llm_utils import get_llm_instance, is_demo_mode
 
 
 def get_llm(temperature: float = 0, model: str = "gpt-4"):
-    """Get configured LLM instance - uses Cohere/OpenAI as primary, MockLLM as fallback."""
-    global _demo_mode
-    
-    # Try Cohere first (using Command R model)
-    cohere_api_key = os.getenv("COHERE_API_KEY")
-    if cohere_api_key:
-        _demo_mode = False
-        return ChatCohere(
-            api_key=cohere_api_key,
-            model="command-r",
-            temperature=temperature
-        )
-    
-    # Fallback to OpenAI
-    api_key = os.getenv("OPENAI_API_KEY")
-    if api_key and api_key != "your_openai_api_key_here":
-        _demo_mode = False
-        return ChatOpenAI(
-            api_key=api_key,
-            model=model,
-            temperature=temperature
-        )
-    
-    # Demo mode - no valid API key
-    _demo_mode = True
-    return MockLLM(model="demo")
-
-
-def is_demo_mode():
-    """Check if system is running in demo mode."""
-    return _demo_mode
+    """Get configured LLM instance - delegates to llm_utils."""
+    return get_llm_instance(temperature, model)
 
 
 def get_session_id(state: SharedState) -> str:
