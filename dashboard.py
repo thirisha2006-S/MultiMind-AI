@@ -1,6 +1,6 @@
 """
-ChatGPT-style Streamlit Dashboard for MultiMind AI.
-Simple chat interface with clean design.
+Exact ChatGPT-style Streamlit Dashboard for MultiMind AI.
+Clean chat interface with sidebar navigation.
 """
 
 import streamlit as st
@@ -12,97 +12,153 @@ from llm_utils import is_demo_mode
 st.set_page_config(
     page_title="MultiMind AI",
     page_icon="🤖",
-    layout="centered",
-    initial_sidebar_state="collapsed"
+    layout="wide",
+    initial_sidebar_state="expanded"
 )
 
-# Minimal CSS
+# ChatGPT-style CSS
 st.markdown("""
 <style>
-    .chat-message {
+    /* Hide default elements */
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    .stDeployButton {display: none;}
+    
+    /* Chat message styling */
+    .chat-container {
+        max-width: 800px;
+        margin: 0 auto;
         padding: 1rem;
+    }
+    
+    .user-bubble {
+        background-color: #0066cc;
+        color: white;
+        padding: 0.8rem 1.2rem;
+        border-radius: 18px;
+        border-bottom-right-radius: 4px;
         margin: 0.5rem 0;
-        border-radius: 10px;
+        margin-left: auto;
+        max-width: 70%;
+        word-wrap: break-word;
     }
-    .user-message {
-        background-color: #e3f2fd;
-        margin-left: 2rem;
+    
+    .ai-bubble {
+        background-color: #f0f0f0;
+        color: #333;
+        padding: 0.8rem 1.2rem;
+        border-radius: 18px;
+        border-bottom-left-radius: 4px;
+        margin: 0.5rem 0;
+        margin-right: auto;
+        max-width: 70%;
+        word-wrap: break-word;
     }
-    .ai-message {
-        background-color: #f5f5f5;
-        margin-right: 2rem;
+    
+    .chat-input-container {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: white;
+        padding: 1rem;
+        border-top: 1px solid #e5e5e5;
+        z-index: 1000;
     }
-    .stButton>button {
-        border-radius: 20px;
+    
+    /* Sidebar styling */
+    [data-testid="stSidebar"] {
+        background-color: #f9f9f9;
+    }
+    
+    /* Model selector styling */
+    .model-info {
+        font-size: 0.85rem;
+        color: #666;
+        padding: 0.5rem;
     }
 </style>
 """, unsafe_allow_html=True)
 
-# Initialize session state for chat history
-if 'messages' not in st.session_state:
-    st.session_state.messages = []
-
-if 'current_result' not in st.session_state:
-    st.session_state.current_result = None
-
-# Simple header
-st.markdown("<h1 style='text-align: center; margin-bottom: 0;'>🤖 MultiMind AI</h1>", unsafe_allow_html=True)
-if is_demo_mode():
-    st.markdown("<p style='text-align: center; color: #888; font-size: 0.9rem;'>Demo Mode - Add API key in .env for real responses</p>", unsafe_allow_html=True)
-
-st.markdown("---")
-
-# Display chat history
-for msg in st.session_state.messages:
-    if msg['role'] == 'user':
-        st.markdown(f"<div class='chat-message user-message'><strong>You:</strong> {msg['content']}</div>", unsafe_allow_html=True)
-    else:
-        st.markdown(f"<div class='chat-message ai-message'><strong>AI:</strong><br>{msg['content']}</div>", unsafe_allow_html=True)
-
-# Handle new input
-if 'current_result' in st.session_state and st.session_state.current_result:
-    # Display the latest result
-    result = st.session_state.current_result['result']
-    answer = result.get('final_answer') or result.get('research_data') or 'No answer generated'
+# Sidebar
+with st.sidebar:
+    st.markdown("<h2>🤖 MultiMind AI</h2>", unsafe_allow_html=True)
     
-    # Show answer in chat
-    st.markdown(f"<div class='chat-message ai-message'><strong>AI:</strong><br>{answer}</div>", unsafe_allow_html=True)
+    st.markdown("---")
     
-    # Clear result after displaying
-    st.session_state.current_result = None
-
-# Input area at bottom - ChatGPT style
-with st.form(key="chat_form", clear_on_submit=True):
-    col1, col2 = st.columns([5, 1])
-    with col1:
-        task_input = st.text_input(
-            "",
-            placeholder="Type your message here...",
-            key="input_field",
-            label_visibility="collapsed"
-        )
-    with col2:
-        submitted = st.form_submit_button("Send", type="primary")
-
-# Process on submit
-if submitted and task_input.strip():
-    # Add user message to chat
-    st.session_state.messages.append({'role': 'user', 'content': task_input})
-    
-    # Process with AI
-    with st.spinner("Thinking..."):
-        try:
-            result, session_id, tracer = run_task(task_input, "research")
-            tracer.finalize(result)
-            st.session_state.current_result = {'result': result}
-        except Exception as e:
-            st.session_state.current_result = {'result': {'final_answer': f"Error: {str(e)}"}}
-    
-    st.rerun()
-
-# Clear chat button
-if st.session_state.messages:
-    if st.button("Clear conversation", type="secondary"):
+    # New chat button
+    if st.button("➕ New conversation", use_container_width=True, type="primary"):
         st.session_state.messages = []
         st.session_state.current_result = None
         st.rerun()
+    
+    st.markdown("---")
+    
+    # Model info
+    st.markdown("<div class='model-info'>", unsafe_allow_html=True)
+    if is_demo_mode():
+        st.markdown("**🔧 Demo Mode**")
+        st.markdown("Using mock responses. Add `COHERE_API_KEY` to `.env` for real AI.")
+    else:
+        st.markdown("**✅ Live Mode**")
+        st.markdown("Using Cohere/OpenAI API")
+    st.markdown("</div>", unsafe_allow_html=True)
+    
+    st.markdown("---")
+    
+    # Conversation history placeholder
+    st.markdown("<small><strong>Recent Chats</strong></small>", unsafe_allow_html=True)
+    st.markdown("<small style='color: #888;'>Your conversations will appear here</small>", unsafe_allow_html=True)
+
+# Initialize session state
+if 'messages' not in st.session_state:
+    st.session_state.messages = []
+
+# Main chat area
+st.markdown("<div class='chat-container'>", unsafe_allow_html=True)
+
+# Display messages
+for msg in st.session_state.messages:
+    if msg['role'] == 'user':
+        st.markdown(f"<div class='user-bubble'>{msg['content']}</div>", unsafe_allow_html=True)
+    else:
+        st.markdown(f"<div class='ai-bubble'>{msg['content']}</div>", unsafe_allow_html=True)
+
+st.markdown("</div>", unsafe_allow_html=True)
+
+# Input area at bottom
+st.markdown("<div class='chat-input-container'>", unsafe_allow_html=True)
+col1, col2 = st.columns([8, 1])
+with col1:
+    user_input = st.text_input(
+        "",
+        placeholder="Message MultiMind AI...",
+        key="chat_input",
+        label_visibility="collapsed"
+    )
+with col2:
+    send_clicked = st.button("Send", type="primary", disabled=not user_input.strip())
+st.markdown("</div>", unsafe_allow_html=True)
+
+# Process input
+if send_clicked and user_input.strip():
+    # Add user message
+    st.session_state.messages.append({'role': 'user', 'content': user_input})
+    
+    # Show thinking indicator
+    with st.spinner("Thinking..."):
+        try:
+            result, session_id, tracer = run_task(user_input, "research")
+            tracer.finalize(result)
+            answer = result.get('final_answer') or result.get('research_data') or 'No answer generated'
+            
+            if is_demo_mode():
+                answer += "\n\n*Demo mode - add API key for real responses*"
+            
+            st.session_state.messages.append({'role': 'assistant', 'content': answer})
+        except Exception as e:
+            st.session_state.messages.append({'role': 'assistant', 'content': f"Error: {str(e)}"})
+    
+    # Clear input
+    st.session_state.chat_input = ""
+    st.rerun()
