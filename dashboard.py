@@ -3,8 +3,15 @@ ChatGPT-style Streamlit Dashboard for MultiMind AI.
 Simple, clean chat interface using Streamlit chat components.
 """
 
+import os
 import streamlit as st
 from llm_utils import is_demo_mode, chat_coding_mode, chat_research_mode
+
+# Load secrets from Streamlit (for Streamlit Cloud) or .env (local)
+if hasattr(st, 'secrets'):
+    os.environ.setdefault('COHERE_API_KEY', st.secrets.get('COHERE_API_KEY', ''))
+    os.environ.setdefault('OPENAI_API_KEY', st.secrets.get('OPENAI_API_KEY', ''))
+    os.environ.setdefault('TAVILY_API_KEY', st.secrets.get('TAVILY_API_KEY', ''))
 
 st.set_page_config(
     page_title="MultiMind AI",
@@ -15,13 +22,15 @@ st.set_page_config(
 # Sidebar
 with st.sidebar:
     st.markdown("<h2>🤖 MultiMind AI</h2>", unsafe_allow_html=True)
-    if st.button("➕ New Chat", type="primary", use_container_width=True):
+    if st.button("➕ New Chat", key="new_chat", help="Start a new conversation"):
         st.session_state.messages = []
+        st.session_state.mode = "Coding"
         st.rerun()
     st.markdown("---")
     
     # Mode selection
-    mode = st.radio("Mode", ["Coding", "Research"], index=0, help="Coding: Direct LLM answers | Research: Web search enabled")
+    mode_options = ["Coding", "Research"]
+    mode = st.radio("Mode", mode_options, index=0, key="mode_radio", help="Coding: Direct LLM answers | Research: Web search enabled")
     st.session_state.mode = mode
     
     st.markdown("---")

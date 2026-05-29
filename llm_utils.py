@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
 from langchain_openai import ChatOpenAI
 
-# Load environment variables
+# Load environment variables (safe to call multiple times)
 load_dotenv()
 
 # Try to import Cohere SDK directly for better compatibility
