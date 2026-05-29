@@ -4,8 +4,7 @@ Simple, clean chat interface using Streamlit chat components.
 """
 
 import streamlit as st
-from main import run_task
-from llm_utils import is_demo_mode
+from llm_utils import is_demo_mode, chat_coding_mode, chat_research_mode
 
 st.set_page_config(
     page_title="MultiMind AI",
@@ -20,14 +19,24 @@ with st.sidebar:
         st.session_state.messages = []
         st.rerun()
     st.markdown("---")
+    
+    # Mode selection
+    mode = st.radio("Mode", ["Coding", "Research"], index=0, help="Coding: Direct LLM answers | Research: Web search enabled")
+    st.session_state.mode = mode
+    
+    st.markdown("---")
     if is_demo_mode():
-        st.info("Demo Mode\nAdd COHERE_API_KEY to .env for real responses")
+        st.info("Demo Mode\nAdd COHERE_API_KEY or OPENAI_API_KEY to .env for real responses")
     st.markdown("---")
     st.markdown("Your conversations will appear here")
 
 # Initialize chat history
 if "messages" not in st.session_state:
     st.session_state.messages = []
+
+# Initialize mode
+if "mode" not in st.session_state:
+    st.session_state.mode = "Coding"
 
 # Welcome screen
 if not st.session_state.messages:
@@ -53,9 +62,12 @@ if prompt := st.chat_input("Message..."):
         with st.spinner("Thinking..."):
             answer = "No response generated"
             try:
-                result, session, tracer = run_task(prompt, "research")
-                tracer.finalize(result)
-                answer = result.get('final_answer') or result.get('research_data') or 'No response generated'
+                if st.session_state.mode == "Coding":
+                    result = chat_coding_mode(prompt)
+                    answer = result.get("final_answer") or "No response generated"
+                else:
+                    result = chat_research_mode(prompt)
+                    answer = result.get("final_answer") or "No response generated"
                 if is_demo_mode():
                     answer += "\n\n*Demo mode - add API key for real LLM responses*"
             except Exception as e:
