@@ -31,7 +31,20 @@ if "user" not in st.session_state:
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-# Simple ChatGPT-style chat
+# Login page if not authenticated
+if not is_authenticated():
+    st.markdown("# 🤖 MultiMind AI")
+    st.markdown("Secure Enterprise Knowledge Assistant")
+    col1, col2, col3 = st.columns([1, 2, 1])
+    with col2:
+        username = st.text_input("Username")
+        password = st.text_input("Password", type="password")
+        if st.button("Sign in"):
+            login_streamlit(username, password)
+            st.rerun()
+    st.stop()
+
+# Chat display
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
@@ -41,16 +54,17 @@ if prompt := st.chat_input("Message MultiMind AI..."):
     st.session_state.messages.append({"role": "user", "content": prompt})
     st.rerun()
 
-# Process last user message
+# Process the last user message
 if st.session_state.messages and st.session_state.messages[-1]["role"] == "user":
+    last_prompt = st.session_state.messages[-1]["content"]
     with st.spinner("Thinking..."):
         try:
             user = get_current_user()
-            intent, _ = classify_intent(prompt)
+            intent, _ = classify_intent(last_prompt)
             task_type = "coding" if intent == Intent.CODING_QUERY else "research"
             
             state: SharedState = {
-                "messages": [HumanMessage(content=prompt)],
+                "messages": [HumanMessage(content=last_prompt)],
                 "task_type": task_type,
                 "retry_count": 0, "max_retries": 3,
                 "metadata": {"session_id": "default"},
@@ -73,15 +87,3 @@ if st.session_state.messages and st.session_state.messages[-1]["role"] == "user"
     
     st.session_state.messages[-1] = {"role": "assistant", "content": answer}
     st.rerun()
-
-# Login page
-if not is_authenticated():
-    st.markdown("# 🤖 MultiMind AI")
-    st.markdown("Secure Enterprise Knowledge Assistant")
-    col1, col2, col3 = st.columns([1, 2, 1])
-    with col2:
-        st.text_input("Username", key="login_user")
-        st.text_input("Password", type="password", key="login_pass")
-        if st.button("Sign in"):
-            login_streamlit(st.session_state.login_user, st.session_state.login_pass)
-            st.rerun()
