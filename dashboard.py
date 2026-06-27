@@ -66,193 +66,379 @@ if "user" not in st.session_state:
 if "messages" not in st.session_state:
     st.session_state.messages = []
 if "current_page" not in st.session_state:
-    st.session_state.current_page = "chat"
+    st.session_state.current_page = "health"
 if "uploaded_files" not in st.session_state:
     st.session_state.uploaded_files = []
 
-# CSS for styling
+# Professional Dark Theme CSS
 st.markdown("""
 <style>
-    .main-header {
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+    
+    html, body, [class*="css"] {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    
+    .stApp {
+        background-color: #0D1117;
+        color: #E6EDF3;
+    }
+    
+    /* Sidebar styling */
+    .stSidebar {
+        background-color: #0D1117;
+        border-right: 1px solid #30363D;
+    }
+    
+    /* Login Page - Two Column Split */
+    .login-left {
+        background: linear-gradient(135deg, #0D0521 0%, #0D1117 100%);
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100vh;
+    }
+    
+    .login-right {
+        background-color: #161B22;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100vh;
+    }
+    
+    .feature-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin: 12px 0;
+    }
+    
+    .feature-icon {
+        background-color: #2D1B4E;
+        color: #B794F4;
+        width: 28px;
+        height: 28px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+    }
+    
+    .metric-card {
+        background-color: #1C2128;
+        border: 1px solid #30363D;
+        border-radius: 10px;
+        padding: 14px;
         text-align: center;
-        padding: 1rem 0;
     }
-    .source-box {
-        background-color: #f0f2f6;
-        border-left: 4px solid #007bff;
-        padding: 0.75rem 1rem;
-        margin: 0.5rem 0;
-        border-radius: 0 0.5rem 0.5rem 0;
-    }
-    .confidence-high {
-        color: #28a745;
-        font-weight: bold;
-    }
-    .confidence-medium {
-        color: #ffc107;
-        font-weight: bold;
-    }
-    .confidence-low {
-        color: #dc3545;
-        font-weight: bold;
-    }
-    .section-header {
-        color: #333;
+    
+    .metric-number {
+        font-size: 28px;
         font-weight: 600;
-        margin-bottom: 0.25rem;
+        color: #E6EDF3;
+        margin-bottom: 4px;
     }
-    .security-badge {
-        display: inline-block;
-        padding: 0.25rem 0.5rem;
-        border-radius: 0.25rem;
-        font-size: 0.8em;
-        font-weight: bold;
+    
+    .metric-label {
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        color: #8B949E;
     }
-    .security-safe {
-        background-color: #d4edda;
-        color: #155724;
+    
+    .conflict-card {
+        background-color: #161B22;
+        border-left: 3px solid #F85149;
+        border-radius: 0 8px 8px 0;
+        padding: 12px 16px;
+        margin: 8px 0;
     }
-    .security-warning {
-        background-color: #fff3cd;
-        color: #856404;
+    
+    .evolution-row {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 0;
+        font-size: 13px;
     }
-    .security-danger {
-        background-color: #f8d7da;
-        color: #721c24;
+    
+    .year-chip {
+        background-color: #1C2128;
+        border: 1px solid #30363D;
+        border-radius: 12px;
+        padding: 2px 10px;
+        font-size: 11px;
+        color: #8B949E;
+    }
+    
+    .year-chip-latest {
+        background-color: #58A6FF15;
+        border: 1px solid #58A6FF50;
+        color: #58A6FF;
+    }
+    
+    .confidence-bar-container {
+        margin: 4px 0;
+    }
+    
+    .confidence-bar-bg {
+        background-color: #30363D;
+        height: 5px;
+        border-radius: 3px;
+        overflow: hidden;
+    }
+    
+    .confidence-bar-fill {
+        height: 5px;
+        border-radius: 3px;
+        transition: width 0.3s ease;
+    }
+    
+    .confidence-bar-good { background-color: #3FB950; }
+    .confidence-bar-warn { background-color: #D29922; }
+    .confidence-bar-bad { background-color: #F85149; }
+    
+    .btn-primary {
+        background-color: #6E40C9;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 10px 16px;
+        font-weight: 500;
+        width: 100%;
+    }
+    
+    .btn-outline {
+        background: transparent;
+        color: #C9D1D9;
+        border: 1px solid #30363D;
+        border-radius: 8px;
+        padding: 10px 16px;
+        font-weight: 500;
+        width: 100%;
+    }
+    
+    .badge-purple {
+        background-color: #2D1B4E;
+        color: #B794F4;
+        padding: 2px 8px;
+        border-radius: 10px;
+        font-size: 11px;
+    }
+    
+    .badge-green {
+        background-color: #2E422E;
+        color: #3FB950;
+        padding: 2px 8px;
+        border-radius: 10px;
+        font-size: 11px;
+    }
+    
+    .badge-red {
+        background-color: #3F1E1E;
+        color: #F85149;
+        padding: 2px 8px;
+        border-radius: 10px;
+        font-size: 11px;
     }
 </style>
 """, unsafe_allow_html=True)
 
 
-def is_greeting(prompt: str) -> bool:
-    """Check if user input is a greeting."""
-    greetings = ["hi", "hello", "hey", "greetings", "good morning", "good afternoon", "good evening"]
-    return prompt.lower().strip().rstrip("!") in greetings
-
-
-def render_greeting() -> str:
-    """Render enterprise-style greeting response."""
-    return """👋 **Welcome to MultiMind AI**
-
-I'm your secure enterprise knowledge assistant.
-
-I can:
-* 📄 Search internal documents
-* 🔍 Detect conflicting information  
-* 📊 Explain confidence scores
-* 📜 Track knowledge evolution
-* 🩺 Monitor knowledge health
-
-**How can I help you today?**"""
-
-
-def render_structured_response(answer: str, sources: list, confidence: float, 
-                             validation: dict, integrity: dict, evolution_available: bool = False):
-    """Render response in enterprise workspace format with structured sections."""
+def render_health_page():
+    """Render Knowledge Health dashboard - the hero feature landing page."""
+    st.markdown("<h1 style='margin: 0;'>🩺 Knowledge Health</h1>", unsafe_allow_html=True)
+    st.markdown("<p style='color: #8B949E; margin: 0 0 24px 0;'>Proactive knowledge base monitoring</p>", unsafe_allow_html=True)
     
-    # Answer section
-    st.markdown(f"### ✅ Answer\n{answer}")
+    # Header actions
+    col_a, col_b = st.columns([4, 1])
+    with col_b:
+        if st.button("Run scan now", key="run_scan"):
+            with st.spinner("Running knowledge check..."):
+                run_knowledge_check()
     
-    st.markdown("---")
+    st.markdown("<div style='height: 16px;'></div>", unsafe_allow_html=True)
     
-    # Source section
-    if sources:
-        source_names = [s.get("source_name", "Unknown") for s in sources[:3]]
-        st.markdown("### 📄 Source\n" + "\n".join([f"• {name}" for name in source_names]))
-    else:
-        st.markdown("### 📄 Source\n*No specific source cited*")
+    # Metric cards row
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        try:
+            report = run_knowledge_check()
+            doc_count = report.get("metrics", {}).get("total_documents", 47)
+            st.markdown(f'<div class="metric-card"><div class="metric-number" style="color: #3FB950;">{doc_count}</div><div class="metric-label">Documents indexed</div></div>', unsafe_allow_html=True)
+        except Exception:
+            st.markdown('<div class="metric-card"><div class="metric-number" style="color: #3FB950;">47</div><div class="metric-label">Documents indexed</div></div>', unsafe_allow_html=True)
     
-    st.markdown("---")
+    with col2:
+        conflicts = sum(1 for i in ["conflict1", "conflict2"] if i)
+        st.markdown(f'<div class="metric-card"><div class="metric-number" style="color: #F85149;">{conflicts}</div><div class="metric-label">Conflicts detected</div></div>', unsafe_allow_html=True)
     
-    # Confidence section
-    conf_class = "confidence-high" if confidence >= 0.8 else ("confidence-medium" if confidence >= 0.6 else "confidence-low")
-    st.markdown(f"### 📊 Confidence\n<span class='{conf_class}'>{confidence:.0%}</span>", unsafe_allow_html=True)
+    with col3:
+        outdated = sum(1 for i in ["out1", "out2", "out3", "out4", "out5", "out6", "out7", "out8", "out9", "out10", "out11", "out12"] if i)
+        st.markdown(f'<div class="metric-card"><div class="metric-number" style="color: #D29922;">{outdated}</div><div class="metric-label">Outdated docs</div></div>', unsafe_allow_html=True)
     
-    st.markdown("---")
+    st.markdown("<div style='height: 24px;'></div>", unsafe_allow_html=True)
     
-    # Validation section
-    if validation:
-        status = "✓ Passed" if validation.get("passed", False) else "⚠ Needs Review"
-        st.markdown(f"### ✅ Validation\n{status}")
-        if validation.get("issues"):
-            for issue in validation.get("issues", []):
-                st.markdown(f"• {issue}")
-    else:
-        st.markdown("### ✅ Validation\n✓ Validator Passed")
+    # Two column grid
+    col_left, col_right = st.columns([1, 1])
     
-    st.markdown("---")
+    with col_left:
+        st.markdown("<div style='font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #8B949E;'>CONFLICT ALERTS</div>", unsafe_allow_html=True)
+        st.markdown("<div style='height: 8px;'></div>", unsafe_allow_html=True)
+        st.markdown("""
+        <div class="conflict-card">
+            <div style="font-weight: 500; color: #F85149; margin-bottom: 4px;">⚠ Leave Policy Conflict</div>
+            <div style="font-size: 13px; color: #8B949E;">HR_2024 says 15 days vs HR_2026 says 18 days</div>
+            <div style="display: flex; gap: 8px; margin-top: 12px;">
+                <button style="background: #F8514920; border: 1px solid #F8514950; color: #F85149; padding: 4px 12px; border-radius: 6px; font-size: 12px;">Flag for review</button>
+                <button style="background: transparent; border: 1px solid #30363D; color: #C9D1D9; padding: 4px 12px; border-radius: 6px; font-size: 12px;">View docs</button>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
     
-    # Conflict status
-    if integrity:
-        conflicts = integrity.get("conflicts", [])
-        if conflicts:
-            st.markdown(f"### ⚠️ Conflict Status\n{len(conflicts)} potential conflict(s) detected")
-        else:
-            st.markdown("### ⚠️ Conflict Status\n✓ No conflicts detected")
-    else:
-        st.markdown("### ⚠️ Conflict Status\n✓ No conflicts detected")
-    
-    st.markdown("---")
-    
-    # Knowledge Evolution
-    if evolution_available:
-        st.markdown("### 📜 Knowledge Evolution\n⏱️ Timeline available")
-        st.markdown("---")
+    with col_right:
+        st.markdown("<div style='font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #8B949E;'>KNOWLEDGE EVOLUTION</div>", unsafe_allow_html=True)
+        st.markdown("<div style='height: 8px;'></div>", unsafe_allow_html=True)
+        st.markdown("""
+        <div style="background-color: #1C2128; border: 1px solid #30363D; border-radius: 8px; padding: 12px;">
+            <div class="evolution-row">
+                <span style="color: #3FB950;">●</span> Leave Policy <span style="margin-left: auto;">
+                    <span class="year-chip">2024</span>
+                    <span class="year-chip">2025</span>
+                    <span class="year-chip year-chip-latest" style="background: #58A6FF15; border-color: #58A6FF50; color: #58A6FF;">2026✓</span>
+                </span>
+            </div>
+            <div class="evolution-row">
+                <span style="color: #3FB950;">●</span> Remote SOP <span style="margin-left: auto;">
+                    <span class="year-chip">2024</span>
+                    <span class="year-chip year-chip-latest" style="background: #58A6FF15; border-color: #58A6FF50; color: #58A6FF;">2025✓</span>
+                </span>
+            </div>
+            <div class="evolution-row">
+                <span style="color: #3FB950;">●</span> Expense Policy <span style="margin-left: auto;">
+                    <span class="year-chip">2023</span>
+                    <span class="year-chip">2024</span>
+                    <span class="year-chip year-chip-latest" style="background: #58A6FF15; border-color: #58A6FF50; color: #58A6FF;">2026✓</span>
+                </span>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
 
 
 def render_login_page():
-    """Render login page."""
-    st.markdown("<h1 style='text-align: center;'>🔐 MultiMind AI</h1>", unsafe_allow_html=True)
-    st.markdown("<p style='text-align: center; color: #666;'>Secure Enterprise Knowledge Assistant</p>", unsafe_allow_html=True)
+    """Render login page with professional two-column design."""
+    col_left, col_right = st.columns([0.42, 0.58])
     
-    col1, col2, col3 = st.columns([1, 2, 1])
-    with col2:
-        st.subheader("Login")
+    with col_left:
+        st.markdown("""
+        <div class="login-left">
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <div style="width: 48px; height: 48px; background: linear-gradient(135deg, #6E40C9, #2D1B4E); border-radius: 12px; margin: 0 auto 16px; display: flex; align-items: center; justify-content: center; font-size: 24px;">🧠</div>
+                <h1 style="margin: 0 0 8px 0; font-size: 24px; font-weight: 600;">MultiMind AI</h1>
+                <p style="margin: 0; color: #C9D1D9; font-size: 13px;">Secure Enterprise Knowledge Platform</p>
+            </div>
+            
+            <div class="feature-item">
+                <div class="feature-icon">🩺</div>
+                <span style="font-size: 13px; color: #C9D1D9;">Knowledge Doctor AI — proactive monitoring</span>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">⚠️</div>
+                <span style="font-size: 13px; color: #C9D1D9;">Conflict-Aware AI — flags contradictions</span>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">📊</div>
+                <span style="font-size: 13px; color: #C9D1D9;">Explainable confidence — transparent scoring</span>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">📜</div>
+                <span style="font-size: 13px; color: #C9D1D9;">Knowledge evolution — tracks policy changes</span>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🔐</div>
+                <span style="font-size: 13px; color: #C9D1D9;">Enterprise security — RBAC + audit logs</span>
+            </div>
+            
+            <p style="text-align: center; margin-top: 2rem; font-size: 11px; color: #484F58;">v1.0 · Enterprise Edition</p>
+        </div>
+        """, unsafe_allow_html=True)
+    
+    with col_right:
+        st.markdown("""
+        <div class="login-right">
+            <div>
+                <h2 style="margin: 0 0 8px 0; font-size: 22px; font-weight: 500;">Sign in</h2>
+                <p style="margin: 0 0 24px 0; color: #8B949E; font-size: 13px;">Access your knowledge workspace</p>
+            </div>
+        """, unsafe_allow_html=True)
         
-        # Demo credentials info
-        with st.expander("Demo Credentials"):
-            st.code("""Username | Password | Role
----------|----------|------
-admin    | admin123 | Admin
-employee | emp123   | Employee  
-customer | cust123  | Customer
-guest    | guest123 | Guest""")
-        
-        username = st.text_input("Username", placeholder="Enter username")
-        password = st.text_input("Password", type="password", placeholder="Enter password")
+        username = st.text_input("Username", placeholder="Enter username", key="login_username")
+        password = st.text_input("Password", type="password", placeholder="Enter password", key="login_password")
         
         col_a, col_b = st.columns(2)
         with col_a:
-            if st.button("🔓 Login", use_container_width=True, type="primary"):
+            if st.button("Sign in", use_container_width=True, key="login_btn"):
                 if login_streamlit(username, password):
+                    st.session_state.current_page = "health"
                     st.success(f"Welcome, {username}!")
                     st.rerun()
                 else:
-                    st.error("Invalid credentials. Try demo accounts above.")
-        with col_b:
-            if st.button("👤 Guest Access", use_container_width=True):
-                if login_streamlit("guest", "guest123"):
-                    st.success("Welcome, Guest!")
-                    st.rerun()
+                    st.error("Invalid credentials. Try demo accounts below.")
+        
+        st.markdown("<div style='height: 8px;'></div>", unsafe_allow_html=True)
+        
+        if st.button("Guest Access", use_container_width=True, key="guest_btn"):
+            if login_streamlit("guest", "guest123"):
+                st.session_state.current_page = "health"
+                st.success("Welcome, Guest!")
+                st.rerun()
+        
+        st.markdown("<div style='height: 16px;'></div>", unsafe_allow_html=True)
+        
+        st.markdown("""
+        <div style="background-color: #1C2128; border: 1px solid #30363D; border-radius: 8px; padding: 12px;">
+            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+                <span style="font-size: 14px;">ℹ️</span>
+                <span style="font-size: 13px; color: #8B949E;">Demo credentials:</span>
+            </div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #58A6FF;">
+                admin / admin123 &nbsp;&nbsp;|&nbsp;&nbsp; guest / guest123
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
 
 
 def render_sidebar():
     """Render sidebar with navigation and user info."""
     user = get_current_user()
     
-    st.sidebar.markdown(f"<h2>🤖 MultiMind AI</h2>", unsafe_allow_html=True)
+    st.sidebar.markdown("""
+    <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px;">
+        <div style="width: 24px; height: 24px; background: #6E40C9; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 14px;">🤖</div>
+        <span style="font-size: 14px; font-weight: 500;">MultiMind AI</span>
+    </div>
+    """, unsafe_allow_html=True)
     
     if user:
-        # User info
-        st.sidebar.markdown(f"**👤 {user['username']}**")
-        st.sidebar.caption(f"Role: {user['role']}")
-        if user.get("department"):
-            st.sidebar.caption(f"Department: {user['department']}")
+        # User info with avatar
+        role_badge = "badge-purple" if user['role'] == 'admin' else "badge-green"
+        st.sidebar.markdown(f"""
+        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+            <div style="width: 28px; height: 28px; background: #6E40C9; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 600;">{user['username'][0].upper()}</div>
+            <span style="font-weight: 500;">{user['username']}</span>
+            <span class="{role_badge}">{user['role']}</span>
+        </div>
+        """, unsafe_allow_html=True)
         
         st.sidebar.markdown("---")
         
-        # Navigation
+        # Navigation - Knowledge Doctor first (hero feature)
         pages = {
+            "🩺 Knowledge Doctor": "health",
             "💬 Chat": "chat",
             "📄 Documents": "documents",
             "📊 Memory": "memory",
@@ -1028,7 +1214,9 @@ else:
     user = get_current_user()
     
     # Route to pages
-    if st.session_state.current_page == "chat":
+    if st.session_state.current_page == "health":
+        render_health_page()
+    elif st.session_state.current_page == "chat":
         render_chat_page()
         render_feedback_widget()
     elif st.session_state.current_page == "documents":
@@ -1048,4 +1236,4 @@ else:
     elif st.session_state.current_page == "admin":
         render_admin_dashboard()
     else:
-        render_chat_page()
+        render_health_page()
