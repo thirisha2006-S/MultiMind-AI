@@ -6,9 +6,24 @@ import os
 import json
 import sqlite3
 import time
+import logging
 from typing import List, Dict, Any, Optional
 from datetime import datetime
 from langchain_core.messages import BaseMessage, messages_to_dict, messages_from_dict
+
+logger = logging.getLogger(__name__)
+
+
+def get_tenant_context():
+    """Lazy import to avoid circular dependency."""
+    try:
+        from tenant import get_tenant_context as _get_ctx
+        return _get_ctx()
+    except Exception:
+        class DummyContext:
+            def get_tenant_id(self):
+                return None
+        return DummyContext()
 
 
 class MemoryStore:
@@ -132,7 +147,8 @@ try:
         
         def __init__(self, model_name: str = "all-MiniLM-L6-v2", persist_dir: str = "faiss_index"):
             self.embeddings = HuggingFaceEmbeddings(model_name=model_name)
-            self.persist_dir = persist_dir
+            self.base_persist_dir = persist_dir
+            self.persist_dir = self._get_tenant_persist_dir()
             self.vector_store = None
             self.text_splitter = RecursiveCharacterTextSplitter(
                 chunk_size=500,
@@ -142,6 +158,17 @@ try:
             self.access_counts: Dict[str, int] = {}        # content_hash -> access count
             
             self._load_or_initialize()
+        
+        def _get_tenant_persist_dir(self) -> str:
+            """Get tenant-specific persistence directory."""
+            try:
+                from tenant import tenant_memory_key
+                tenant_id = get_tenant_context().get_tenant_id()
+                if tenant_id:
+                    return f"faiss_index_{tenant_id}"
+            except Exception:
+                pass
+            return self.base_persist_dir
         
         def _load_or_initialize(self):
             """Load existing FAISS index from disk or start fresh."""
@@ -250,6 +277,16 @@ try:
                     "_iteration": metadata.get("iteration", 0) if metadata else 0,
                     "_validated": metadata.get("validated", False) if metadata else False,
                     "_validation_score": metadata.get("validation_score", quality) if metadata else quality,
+                    # Knowledge Integrity fields
+                    "_source_type": metadata.get("source_type", "llm_generation") if metadata else "llm_generation",
+                    "_source_name": metadata.get("source_name", "unknown") if metadata else "unknown",
+                    "_user_id": metadata.get("user_id", "unknown") if metadata else "unknown",
+                    "_allowed_roles": metadata.get("allowed_roles", ["*"]) if metadata else ["*"],
+                    "_department": metadata.get("department", None) if metadata else None,
+                    "_freshness_score": metadata.get("freshness_score", 1.0) if metadata else 1.0,
+                    "_conflict_id": metadata.get("conflict_id", None) if metadata else None,
+                    # Multi-tenant field
+                    "_tenant_id": get_tenant_context().get_tenant_id(),
                 }
                 merged_metadata = {**provenance, **(metadata or {})}
                 
@@ -257,6 +294,75 @@ try:
                     page_content=chunk,
                     metadata=merged_metadata
                 ))
+            
+            # Track knowledge evolution
+            try:
+                from knowledge_evolution import track_knowledge_evolution
+                track_knowledge_evolution(
+                    content=content,
+                    source_name=metadata.get("source_name", "unknown") if metadata else "unknown",
+                    source_type=metadata.get("source_type", "llm_generation") if metadata else "llm_generation",
+                    trust_score=quality,
+                    metadata=metadata
+                )
+            except Exception as e:
+                logger.debug(f"[Evolution] Tracking skipped: {e}")
+            
+            # Check for conflicts before storing
+            try:
+                from conflict_detector import get_conflict_detector, KnowledgeChunk
+                detector = get_conflict_detector()
+                
+                # Build KnowledgeChunk for new content
+                new_chunk_obj = KnowledgeChunk(
+                    chunk_id=content_hash,
+                    content=chunks[0],  # Use first chunk as representative
+                    source_name=metadata.get("source_name", "unknown") if metadata else "unknown",
+                    source_type=metadata.get("source_type", "llm_generation") if metadata else "llm_generation",
+                    timestamp=now,
+                    trust_score=quality,
+                    freshness_score=metadata.get("freshness_score", 1.0) if metadata else 1.0,
+                    allowed_roles=metadata.get("allowed_roles", ["*"]) if metadata else ["*"],
+                    department=metadata.get("department", None) if metadata else None,
+                    metadata=metadata or {},
+                    content_hash=content_hash,
+                )
+                
+                # Get existing chunks (simplified: use all indexed docs)
+                existing_chunks = []
+                if self.vector_store:
+                    for doc_id in range(min(self.vector_store.index.ntotal, 50)):
+                        try:
+                            doc = self.vector_store.docstore.search(doc_id)
+                            if doc:
+                                meta = doc.metadata
+                                existing_chunks.append(KnowledgeChunk(
+                                    chunk_id=doc_id,
+                                    content=doc.page_content,
+                                    source_name=meta.get("_source_name", "unknown"),
+                                    source_type=meta.get("_source_type", "llm_generation"),
+                                    timestamp=meta.get("_timestamp", now),
+                                    trust_score=meta.get("_quality", 0.5),
+                                    freshness_score=meta.get("_freshness_score", 1.0),
+                                    allowed_roles=meta.get("_allowed_roles", ["*"]),
+                                    department=meta.get("_department", None),
+                                    metadata=meta,
+                                    content_hash=meta.get("_hash", ""),
+                                ))
+                        except Exception:
+                            pass
+                
+                conflicts = detector.detect_conflicts(new_chunk_obj, existing_chunks)
+                if conflicts:
+                    logger.info(f"[Memory] Detected {len(conflicts)} conflicts when adding knowledge")
+                    # Store conflict IDs in metadata of the new doc
+                    for i, conflict in enumerate(conflicts):
+                        # Add conflict reference to the first chunk's metadata
+                        if i == 0 and new_docs:
+                            new_docs[0].metadata["_conflict_id"] = conflict.conflict_id
+                            new_docs[0].metadata["_conflicts_detected"] = True
+            except Exception as e:
+                logger.debug(f"[Memory] Conflict detection skipped: {e}")
             
             if self.vector_store is None:
                 self.vector_store = FAISS.from_documents(new_docs, self.embeddings)
@@ -272,8 +378,10 @@ try:
             Returns each result with:
                 - content
                 - trust (decayed 0-1 score)
+                - freshness_score
                 - provenance (agent, session, created, access_count, validated, validation_score, iteration)
                 - metadata (full)
+                - conflict_info (if applicable)
             """
             if self.vector_store is None:
                 return []
@@ -288,6 +396,11 @@ try:
                 content_hash = metadata.get("_hash") or self._content_hash(content)
                 
                 trust = self.compute_trust_score(metadata, current_time)
+                
+                # Compute freshness
+                timestamp = metadata.get("_timestamp", current_time)
+                age_days = (current_time - timestamp) / (24 * 3600)
+                freshness = max(0.0, 0.5 ** (age_days / 90))
                 
                 if trust > 0.3:
                     # Increment access tracking (in-memory; not persisted back to FAISS on read)
@@ -304,14 +417,22 @@ try:
                         "iteration": metadata.get("_iteration", 0),
                     }
                     
+                    # Conflict info
+                    conflict_info = {
+                        "has_conflict": metadata.get("_conflicts_detected", False),
+                        "conflict_id": metadata.get("_conflict_id", None),
+                    }
+                    
                     filtered.append({
                         "content": content,
                         "metadata": metadata,
                         "trust": trust,
-                        "provenance": provenance
+                        "freshness_score": freshness,
+                        "provenance": provenance,
+                        "conflict_info": conflict_info,
                     })
             
-            filtered.sort(key=lambda x: x["trust"], reverse=True)
+            filtered.sort(key=lambda x: (x.get("trust", 0) * 0.6 + x.get("freshness_score", 1.0) * 0.4), reverse=True)
             return filtered[:k]
         
         def detect_contradictions(self, new_content: str, threshold: float = 0.8) -> List[Dict]:
@@ -350,18 +471,51 @@ try:
             and validation coverage.
             """
             if self.vector_store is None:
-                return {"total_chunks": 0, "average_trust": 0.0}
+                return {
+                    "total_chunks": 0, 
+                    "average_trust": 0.0,
+                    "knowledge_health_score": 1.0,
+                    "unresolved_conflicts": 0
+                }
             
             total = self.vector_store.index.ntotal
             current_time = time.time()
             
             trust_scores = list(self.knowledge_scores.values())  # proxy for trust
             
+            # Compute average freshness
+            freshness_scores = []
+            for doc_id in range(min(total, 100)):
+                try:
+                    doc = self.vector_store.docstore.search(doc_id)
+                    if doc and "_timestamp" in doc.metadata:
+                        age_days = (current_time - doc.metadata["_timestamp"]) / (24 * 3600)
+                        freshness = max(0.0, 0.5 ** (age_days / 90))
+                        freshness_scores.append(freshness)
+                except Exception:
+                    pass
+            
+            avg_freshness = sum(freshness_scores) / len(freshness_scores) if freshness_scores else 1.0
+            
+            # Include knowledge health if available
+            health_score = 1.0
+            unresolved_conflicts = 0
+            try:
+                from conflict_detector import get_knowledge_health
+                health = get_knowledge_health()
+                health_score = health.get("knowledge_health_score", 1.0)
+                unresolved_conflicts = health.get("unresolved_conflicts", 0)
+            except Exception:
+                pass
+            
             return {
                 "total_chunks": total,
                 "average_trust": sum(trust_scores) / len(trust_scores) if trust_scores else 0.0,
                 "min_trust": min(trust_scores) if trust_scores else 0.0,
                 "max_trust": max(trust_scores) if trust_scores else 0.0,
+                "average_freshness": avg_freshness,
+                "knowledge_health_score": health_score,
+                "unresolved_conflicts": unresolved_conflicts,
                 "report_generated_at": current_time
             }
     

@@ -12,3 +12,12 @@ sentence-transformers>=2.5.0
 langchain-huggingface>=0.0.1
 mcp>=1.0.0
 streamlit>=1.30.0
+
+# New enterprise dependencies
+PyPDF2>=3.0.0
+python-docx>=1.1.0
+openpyxl>=3.1.0
+pytesseract>=0.3.10
+Pillow>=10.0.0
+openai-whisper>=20231117
+tiktoken>=0.5.0

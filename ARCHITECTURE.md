@@ -4,8 +4,14 @@
 
 MultiMind AI is an **integrity-aware autonomous orchestration system** that combines:
 
-- **Cognitive layering** (planner → supervisor → workers → validator → reflection)
+- **Cognitive layering** (supervisor → planner → workers → validator → reflection)
 - **Memory governance** (provenance, trust decay, contradiction detection)
+- **Knowledge Evolution** (tracks how organizational knowledge changes over time)
+- **Explainable Confidence** (breakdown of confidence factors)
+- **Adaptive Routing** (skips unnecessary agents for simple queries)
+- **Multi-Tenant Architecture** (isolation between organizations)
+- **Agent Memory Replay** (inspect workflow reasoning steps)
+- **Enterprise Evaluation Engine** (automatic quality assessment)
 - **Observability** (execution tracing, invariant enforcement, loop detection)
 
 Unlike traditional agent frameworks that focus on capability, MultiMind AI enforces **semantic correctness boundaries** across all state transitions.

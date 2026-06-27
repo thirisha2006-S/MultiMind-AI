@@ -63,25 +63,38 @@ def get_mode():
     return _current_mode
 
 
-def get_coding_llm(temperature: float = 0):
+def get_coding_llm(temperature: float = 0, model: str = None):
     """Get LLM for coding mode - pure reasoning, no search."""
+    from cost_optimizer import get_cost_optimizer
+    
+    optimizer = get_cost_optimizer()
+    selected_model = model or optimizer.select_model("coding task", force_tier="medium")
+    config = {"command-r-08-2024": "command-r-08-2024", "gpt-3.5-turbo": "gpt-3.5-turbo", "gpt-4o": "gpt-4o", "mock": "mock"}
+    model_name = config.get(selected_model, "command-r-08-2024")
+    
     # Cohere preferred (using SDK directly)
     if COHERE_SDK_AVAILABLE:
         cohere_api_key = os.getenv("COHERE_API_KEY")
         if cohere_api_key:
-            return CohereLLM(api_key=cohere_api_key, model="command-r-08-2024", temperature=temperature)
+            return CohereLLM(api_key=cohere_api_key, model=model_name, temperature=temperature)
     
     # OpenAI fallback
     api_key = os.getenv("OPENAI_API_KEY")
     if api_key and api_key != "your_openai_api_key_here":
-        return ChatOpenAI(api_key=api_key, model="gpt-4", temperature=temperature)
+        return ChatOpenAI(api_key=api_key, model=model_name, temperature=temperature)
     
     # Demo mode fallback
     return MockLLMCoding()
 
 
 def get_llm_instance(temperature: float = 0, model: str = "gpt-4"):
-    """Get LLM instance for agents - delegates to get_coding_llm."""
+    """Get LLM instance for agents - delegates to get_coding_llm with cost optimization."""
+    from cost_optimizer import get_cost_optimizer
+    optimizer = get_cost_optimizer()
+    
+    # Select model based on cost optimizer
+    selected_model = optimizer.select_model(model or "gpt-4", force_tier="medium")
+    
     # Cohere preferred
     if COHERE_SDK_AVAILABLE:
         cohere_api_key = os.getenv("COHERE_API_KEY")
@@ -91,7 +104,7 @@ def get_llm_instance(temperature: float = 0, model: str = "gpt-4"):
     # OpenAI fallback
     api_key = os.getenv("OPENAI_API_KEY")
     if api_key and api_key != "your_openai_api_key_here":
-        return ChatOpenAI(api_key=api_key, model=model, temperature=temperature)
+        return ChatOpenAI(api_key=api_key, model="gpt-4o", temperature=temperature)
     
     # Demo mode fallback
     return MockLLMCoding()
@@ -130,7 +143,13 @@ class MockLLMCoding:
 
 
 def chat_coding_mode(query: str) -> dict:
-    """Pure LLM coding mode - no search, direct answers."""
+    """Pure LLM coding mode - no search, direct answers with cost tracking."""
+    from cost_optimizer import get_cost_optimizer
+    optimizer = get_cost_optimizer()
+    
+    cost_info = optimizer.estimate_query_cost(query)
+    st_cost = cost_info["estimated_cost_usd"]
+    
     llm = get_coding_llm(temperature=0)
     
     system_prompt = SystemMessage(content="""You are an AI coding assistant.
@@ -158,13 +177,17 @@ Output must be:
     
     try:
         response = llm.invoke([system_prompt, user_prompt])
-        return {"final_answer": response.content, "research_data": None}
+        cost = optimizer.record_execution(query, "", "command-r", optimizer.token_counter.estimate_tokens(query + response.content))
+        return {"final_answer": response.content, "research_data": None, "estimated_cost": cost}
     except Exception as e:
         return {"final_answer": f"Error: {str(e)}", "research_data": None}
 
 
 def chat_research_mode(query: str) -> dict:
-    """Research mode - with web search capabilities."""
+    """Research mode - with web search capabilities and cost tracking."""
+    from cost_optimizer import get_cost_optimizer
+    optimizer = get_cost_optimizer()
+    
     try:
         from tools import get_tavily_tool
         search_results = get_tavily_tool().invoke({"query": query})
@@ -173,10 +196,19 @@ def chat_research_mode(query: str) -> dict:
         if isinstance(search_results, list):
             for i, r in enumerate(search_results[:3], 1):
                 if isinstance(r, dict):
-                    formatted += f"{i}. {r.get('title', 'Result')}\n"
-                    formatted += f"   {r.get('content', '')[:200]}...\n\n"
+                    title = r.get('title', 'Result')
+                    content = r.get('content', '')[:200]
+                    url = r.get('url', '')
+                    formatted += f"{i}. {title}\n"
+                    formatted += f"   {content}...\n"
+                    if url:
+                        formatted += f"   Source: {url}\n\n"
         
-        return {"final_answer": formatted, "research_data": formatted}
+        # Estimate cost
+        cost = optimizer.estimate_query_cost(query, formatted)
+        optimizer.record_execution(query, formatted, "tavily_search", cost["estimated_tokens"])
+        
+        return {"final_answer": formatted, "research_data": formatted, "estimated_cost": cost["estimated_cost_usd"]}
     except Exception as e:
-        # Graceful fallback - return error without crashing
+        # Graceful fallback
         return {"final_answer": f"Research error: {str(e)}\n\nAdd TAVILY_API_KEY to .env for web search.", "research_data": None}

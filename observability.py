@@ -180,8 +180,8 @@ class InvariantChecker:
             # Determine if this is a retry (agent returned error and wants to be called again)
             is_retry = bool(new_state.get("error") and new_state.get("next") == agent)
             
-            # Only check output field presence if not a retry
-            if not is_retry:
+            # Only check output field presence if not a retry and not an error
+            if not is_retry and not new_state.get("error"):
                 if agent == "research":
                     violations.extend(InvariantChecker.check_field_presence(
                         new_state, ["research_data"], f"After {agent}"

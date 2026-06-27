@@ -1,87 +1,125 @@
-# MultiMind AI — Autonomous Cognitive Workflow System
+# MultiMind AI: A Secure Multi-Agent Enterprise Knowledge Assistant
 
-A production-grade multi-agent system featuring **Planner + Orchestration + Validation + Reflection + Memory Governance** architecture — enabling self-improving, integrity-aware autonomous AI.
+An enterprise-grade Agentic AI platform that securely retrieves information from private organizational documents and public web sources using a multi-agent architecture, while preventing data leakage through role-based access control, human approval workflows, and explainable AI.
+
+**Problem:** Organizations have large amounts of internal documents, policies, and databases. Employees struggle to find accurate information, and using public AI tools can risk exposing confidential data. MultiMind AI provides a secure, multi-agent AI assistant that retrieves authorized internal information, combines it with relevant public knowledge when needed, and generates reliable, explainable responses without leaking sensitive data.
 
 ## 🏗️ Architecture Overview
 
 ```
-[User Input]
-     ↓
-[Planner Agent] → Task decomposition & policy learning
-     ↓
-[Supervisor Agent] → Semantic routing + complexity detection
-     ↓
-[Worker Agents] → Research/Coding with RAG + provenance
-     ↓
-[Validator Agent] → LLM-based fact-checking & hallucination detection
-     ↓
-[Reflection Agent] → Workflow analysis, learning, final synthesis
-     ↓
-[Memory Layer] → SQLite + FAISS with trust decay, contradiction detection, governance
-     ↓
-[Observability] → Execution tracing, invariant enforcement, loop detection
-     ↓
-[Final Output]
+Users
+   │
+   ▼
+Authentication (JWT / Cognito)
+   │
+   ▼
+API Gateway
+   │
+   ▼
+Load Balancer
+   │
+   ▼
+Docker Containers (ECS/EKS)
+   │
+   ├── Supervisor Agent
+   ├── Planner Agent
+   ├── Research Agent
+   ├── Validator Agent
+   ├── Reflection Agent
+   │
+   ▼
+Knowledge Layer
+ ├── Amazon RDS
+ ├── OpenSearch / Vector DB
+ ├── S3 (Documents)
+ └── Web Search
+   │
+   ▼
+LLM
+(Bedrock / OpenAI / Cohere)
+   │
+   ▼
+CloudWatch + Audit Logs
 ```
 
 ## 🌟 Features
 
+### Security & Access Control
+- **RBAC** — Admin, Employee, Customer, Guest roles with permission granularity
+- **Authentication** — Session-based login with role-aware access
+- **Prompt Injection Detection** — Real-time scanning of user inputs
+- **PII Masking** — Automatic redaction of sensitive data in outputs
+- **SQL Injection Prevention** — Code and input validation
+- **Audit Logging** — Full audit trail for all agent actions
+
+### Enterprise Memory & RAG
+- **Private Document Upload** — PDF, DOCX, Excel, CSV, images, audio
+- **FAISS Vector Store** — Local RAG with HuggingFace embeddings + disk persistence
+- **Permission-Aware Retrieval** — Documents filtered by user role and department
+
+### Knowledge Intelligence
+- **Knowledge Evolution Engine** — Track how policies change over time
+- **Knowledge Doctor AI** — Proactive health checks for your knowledge base (NEW)
+- **Source Attribution** — Every answer traced to internal, web, or LLM sources
+- **Trust Decay** — 30-day half-life; validated knowledge gets +50% boost
+
 ### Core Agents (6)
 - **Planner Agent** — Decomposes complex tasks, learns from successful past plans
-- **Supervisor Agent** — LLM-based semantic routing with retry & complexity handling
-- **Research Agent** — Tavily web search + FAISS memory with provenance tracking
-- **Coder Agent** — Safe Python execution with error recovery & validation
-- **Validator Agent** — Real LLM scrutiny (not stub) for correctness & relevance
-- **Reflection Agent** — Workflow quality analysis, planning feedback, self-improvement
+- **Supervisor Agent** — Adaptive routing; skips planner for simple queries
+- **Research Agent** — Tavily web search + FAISS memory with provenance
+- **Coder Agent** — Safe Python execution with SQL injection checks
+- **Validator Agent** — Real LLM scrutiny; confidence breakdown
+- **Reflection Agent** — Workflow analysis; synthesizes final answer
 
-### Memory & Governance
-- **SQLite Memory** — Persistent conversation history with quality scores
-- **FAISS Vector Store** — Local RAG with HuggingFace embeddings + disk persistence
-- **Provenance Chain** — Every knowledge chunk tracks: agent, session, timestamp, validation status
-- **Trust Decay** — Exponential age decay + access stabilization + validation boost
-- **Contradiction Detection** — Flags conflicting knowledge before storage
-- **Quality Reporting** — Aggregate trust statistics, agent breakdowns, validation coverage
+### Human-in-the-Loop & Trust
+- **Human Approval Workflow** — Optional approval gate for sensitive actions
+- **Explainable Confidence** — Factor breakdown (validator score, trust, freshness)
+- **Self-Learning Agent** — Thumbs up/down feedback; trust score adjustment
+- **Agent Memory Replay** — Inspect every step in any workflow
 
-### Reliability & Observability
-- **Retry Logic** — Automatic retries with exponential backoff per agent
+### Production & Observability
+- **Docker Deployment** — docker-compose for local, ECS Fargate for production
+- **Execution Tracing** — Full audit trail before/after each agent
 - **Invariant Enforcement** — State transition validators catch corruption early
-- **Execution Tracing** — Full audit trail: before/after state, agent, timestamps
-- **Loop Detection** — Flags infinite loops and stuck workflows automatically
-- **State Integrity** — Every transition checked: field presence, index bounds, confidence ranges
+- **Loop Detection** — Flags infinite loops and stuck workflows
+- **Multi-Tenant Support** — Full data isolation between organizations
 
 ## 📁 Project Structure
 
 ```
 multimind-ai/
-├── agents.py           # 6 agents with tracing + governance metadata
-├── graph.py            # 6-node workflow orchestration
-├── main.py             # Entry point with observability & governance report
-├── state.py            # Shared state schema (TypedDict)
-├── tools.py            # Tavily Search + Python REPL
-├── memory.py           # SQLite + FAISS (provenance, trust decay, contradiction detection)
+├── agents.py           # 6 agents with security, RBAC, adaptive selection
+├── graph.py            # Enterprise workflow orchestration with approval
+├── main.py             # Entry point with security & RBAC
+├── state.py            # Shared state schema with enterprise fields
+├── tools.py            # Tavily Search + Python REPL + MCP tools
+├── memory.py           # SQLite + FAISS (provenance, trust decay, tenant isolation)
 ├── planner.py          # Task decomposition + policy learning
-├── reflection.py       # Workflow analysis + insight generation
-├── observability.py    # Tracing, invariants, loop detection (NEW)
+├── reflection.py       # Workflow analysis + confidence scoring + evolution
+├── observability.py    # Tracing, invariants, loop detection
+├── knowledge_evolution.py # Knowledge timeline tracking
+├── confidence_explainer.py  # Explainable confidence breakdown
+├── evaluation_engine.py   # Enterprise evaluation metrics
+├── replay.py           # Agent memory replay
+├── tenant.py           # Multi-tenant architecture
+├── security.py         # Prompt injection, PII masking, audit logs
+├── rbac.py             # Role-based access control
+├── auth.py             # Authentication & session management
+├── approval.py         # Human approval workflow
+├── parsers.py          # PDF, DOCX, Excel parsers
+├── feedback.py         # Self-learning from user feedback
+├── multimodal.py       # Image, audio, PDF input handling
+├── cost_optimizer.py   # Model routing and budget tracking
+├── admin_dashboard.py  # Enterprise admin dashboard
+├── memory_dashboard.py # Agent memory visualization
+├── dashboard.py        # Streamlit chat interface with all enterprise features
 ├── requirements.txt    # Python dependencies
 ├── .env.example        # Environment variables template
+├── Dockerfile          # Container configuration
+├── docker-compose.yml  # Local orchestration
+├── deploy/             # AWS deployment templates
 ├── examples.py         # Example interactions
 ├── ARCHITECTURE.md     # Technical deep-dive
-└── README.md           # This file
-```
-multimind-ai/
-├── agents.py           # 6 agents with tracing + governance metadata
-├── graph.py            # 6-node workflow orchestration with conditional routing
-├── main.py             # Entry point with observability reporting
-├── state.py            # Shared state schema with planning & reflection fields
-├── tools.py            # Tavily Search (deprecation warning) + Python REPL
-├── memory.py           # SQLite + FAISS with provenance, decay, contradiction detection
-├── planner.py          # Task decomposition engine with policy learning
-├── reflection.py       # Workflow analysis and insight generation
-├── observability.py    # Execution traces, invariant validation, loop detection
-├── requirements.txt    # Python dependencies
-├── .env.example        # Environment variables template
-├── examples.py         # Example interactions (research, code, multi-turn)
-├── ARCHITECTURE.md     # Technical deep-dive: layers, failure taxonomy, policies
 └── README.md           # This file
 ```
 
@@ -197,18 +235,55 @@ Designed for minimal operational cost:
 - [ ] Human-in-the-loop approval gates for low-confidence outputs
 - [ ] Docker deployment with volume mounts for persistence
 
-## 📊 Governance Metrics
+## 📊 Evaluation
 
-After each run, the system reports:
-```
-[Observability] Session <id>: N transitions, M violations, P loops detected
-[Memory Governance Report]
-  Total knowledge chunks: X
-  Average trust score: 0.XX
-  Trust range: [0.XX, 0.XX]
+| Feature | MultiMind AI |
+|---------|------------|
+| Multi-Agent | ✅ |
+| Authentication | ✅ |
+| RBAC | ✅ |
+| Prompt Injection Protection | ✅ |
+| PII Masking | ✅ |
+| Human Approval | ✅ |
+| Knowledge Integrity | ✅ |
+| Knowledge Evolution | ✅ |
+| Explainable Confidence | ✅ |
+| Multi-Tenant | ✅ |
+| Agent Replay | ✅ |
+| See full comparison → | [docs/evaluation.md](docs/evaluation.md) |
+
+---
+
+## 🚀 Quick Deploy
+
+### Docker
+```bash
+docker build -t multimind-ai .
+docker-compose up
 ```
 
-Zero violations indicates all state transitions respected integrity boundaries.
+### Streamlit
+```bash
+streamlit run dashboard.py
+```
+
+---
+
+## 📚 Documentation
+
+- Architecture → [docs/architecture.md](docs/architecture.md)
+- Evaluation → [docs/evaluation.md](docs/evaluation.md)
+- API Examples → [examples.py](examples.py)
+
+---
+
+## 🛠️ Extending MultiMind AI
+
+See the architecture document for design trade-offs and extension points:
+- New agents: Add function with `@trace_agent("name")` decorator
+- Custom trust: Override `compute_trust_score` in RAGMemory
+- Persistence: Replace in-memory PolicyStore with Redis/SQLite
+- Embeddings: Swap HuggingFace for OpenAI/Pinecone
 
 ## 🧪 Testing
 

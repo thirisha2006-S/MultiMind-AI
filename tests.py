@@ -186,5 +186,64 @@ def run_tests():
     return result
 
 
+class TestKnowledgeEvolution(unittest.TestCase):
+    """Test the Knowledge Evolution Engine."""
+    
+    def test_evolution_tracker_initialization(self):
+        """Test that evolution tracker initializes correctly."""
+        from knowledge_evolution import KnowledgeEvolutionTracker
+        tracker = KnowledgeEvolutionTracker()
+        self.assertIsNotNone(tracker)
+    
+    def test_topic_hash_generation(self):
+        """Test topic hash generation is stable."""
+        from knowledge_evolution import KnowledgeEvolutionTracker
+        tracker = KnowledgeEvolutionTracker()
+        
+        hash1 = tracker._topic_hash("Leave Policy 2024")
+        hash2 = tracker._topic_hash("leave policy 2024")
+        self.assertEqual(hash1, hash2)  # Should normalize case
+    
+    def test_confidence_explainer_factors(self):
+        """Test that confidence explainer generates correct factors."""
+        from confidence_explainer import ConfidenceExplainer
+        
+        validation = {"confidence": 0.85, "issues": [], "suggestions": []}
+        sources = [{"trust": 0.9, "freshness_score": 1.0}]
+        
+        breakdown = ConfidenceExplainer.explain(validation, sources)
+        self.assertEqual(len(breakdown.factors), 5)
+        self.assertGreater(breakdown.final_score, 0)
+    
+    def test_tenant_context(self):
+        """Test tenant context functionality."""
+        from tenant import TenantContext
+        ctx = TenantContext()
+        
+        ctx.set_tenant("test-tenant")
+        self.assertEqual(ctx.get_tenant_id(), "test-tenant")
+    
+    def test_replay_mechanism(self):
+        """Test workflow replay recording."""
+        from replay import WorkflowReplay
+        replay = WorkflowReplay()
+        
+        replay.record_step("test", {"input": "a"}, {"output": "b"})
+        self.assertEqual(len(replay.steps), 1)
+        self.assertEqual(replay.steps[0].agent_name, "test")
+    
+    def test_evaluation_engine(self):
+        """Test evaluation metrics generation."""
+        from evaluation_engine import EvaluationEngine
+        engine = EvaluationEngine()
+        
+        metrics = engine.evaluate(
+            time.time(),
+            {"confidence": 0.85, "conflicts": []},
+            [{"source": "test"}]
+        )
+        self.assertEqual(metrics.confidence, 0.85)
+
+
 if __name__ == "__main__":
     run_tests()

@@ -1,0 +1,68 @@
+# MultiMind AI - Docker Compose
+# Enterprise Knowledge Assistant
+
+version: '3.8'
+
+services:
+  multimind-ai:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - COHERE_API_KEY=${COHERE_API_KEY}
+      - TAVILY_API_KEY=${TAVILY_API_KEY}
+      - MCP_ENABLED=${MCP_ENABLED:-false}
+      - BUDGET_DOLLARS=${BUDGET_DOLLARS:-10.0}
+      - SESSION_TIMEOUT_MINUTES=${SESSION_TIMEOUT_MINUTES:-480}
+    volumes:
+      - ./faiss_index:/app/faiss_index
+      - ./agent_memory.db:/app/agent_memory.db
+      - ./audit_log.db:/app/audit_log.db
+      - ./feedback.db:/app/feedback.db
+      - ./logs:/app/logs
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 4G
+        reservations:
+          cpus: '0.5'
+          memory: 1G
+
+  # Optional: Redis for distributed caching (production)
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+    profiles:
+      - production
+
+  # Optional: PostgreSQL for production (replace SQLite)
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_DB=multimind
+      - POSTGRES_USER=${DB_USER:-multimind}
+      - POSTGRES_PASSWORD=${DB_PASSWORD:-multimind_password}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+    profiles:
+      - production
+
+volumes:
+  redis_data:
+  postgres_data:
