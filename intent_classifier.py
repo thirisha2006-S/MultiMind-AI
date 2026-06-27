@@ -119,54 +119,52 @@ def classify_intent(prompt: str) -> Tuple[Intent, str]:
 
 
 def get_greeting_response() -> str:
-    """Response for greetings."""
-    return """👋 Hi! Welcome to MultiMind AI.
+    """Response for greetings - friendly and direct."""
+    return """Hey there! 😊
 
-How can I help you today? 😊"""
+What can I help you with today?"""
 
 
 def get_small_talk_response() -> str:
-    """Response for small talk."""
-    return """I'm here and ready to help! 😊
+    """Response for small talk - natural conversation."""
+    return """I'm doing great, thanks for asking! 
 
-You can ask me about your organization's documents, policies, or upload new files for analysis."""
+I'm ready when you are - just let me know what you'd like to dive into."""
 
 
 def get_thanks_response() -> str:
-    """Response for thanks."""
-    return """You're welcome! 😊
+    """Response for thanks - warm and encouraging."""
+    return """Anytime! 
 
-If you need anything else, just let me know."""
+Anything else I can help with?"""
 
 
 def get_identity_response() -> str:
-    """Response for identity questions."""
-    return """I'm MultiMind AI, your enterprise knowledge assistant.
+    """Response for identity questions - clear but friendly."""
+    return """I'm MultiMind AI!
 
-I help employees search company documents, answer questions, detect conflicting information, and provide trusted responses with source references."""
+I'm your go-to for searching company docs, answering policy questions, or comparing documents. Think of me as your knowledge base assistant."""
 
 
 def get_help_response() -> str:
-    """Response for help requests."""
-    return """I'm here to help you with your organization's knowledge base.
+    """Response for help requests - simple guidance."""
+    return """Happy to help!
 
-What would you like to know? You can ask about policies, documents, or upload files for analysis."""
+Just ask me about anything in your organization's knowledge base - policies, procedures, or documents."""
 
 
 def get_goodbye_response() -> str:
-    """Response for goodbyes."""
-    return """Goodbye! 👋
+    """Response for goodbyes - warm sign-off."""
+    return """See you later! 👋
 
-Have a wonderful day."""
+Come back anytime you need to dig into your docs."""
 
 
 def get_natural_unclear_response() -> str:
-    """Natural response for unclear/ambiguous inputs - human-like, not robotic."""
-    return """I'm here! 😊
+    """Natural response for unclear inputs - conversational, not robotic."""
+    return """Hey! What's on your mind?
 
-Ask me about your organization's policies or documents. For example:
-• "What is our leave policy?"
-• "Summarize HR documents" """
+Ask me something like "What's our leave policy?" or "Find docs about PTO" """
 
 
 def get_intent_label(intent: Intent) -> str:
