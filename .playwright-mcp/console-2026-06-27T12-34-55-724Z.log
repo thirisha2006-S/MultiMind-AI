@@ -386,3 +386,1223 @@
 [  449194ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
 [  449203ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
 [  449237ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  453574ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  453575ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  453576ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  453582ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  453586ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  457944ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  457944ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  457945ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  457951ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  457956ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  462307ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  462307ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  462308ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  462317ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  462348ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  466679ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  466679ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  466680ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  466685ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  466690ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  471040ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  471041ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  471042ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  471051ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  471082ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  475390ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  475390ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  475391ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  475400ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  475430ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  479756ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  479756ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  479757ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  479766ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  479796ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  484110ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  484111ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  484112ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  484122ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  484156ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  488456ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  488457ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  488457ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  488466ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  488491ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  492824ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  492825ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  492825ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  492834ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  492859ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  497172ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  497173ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  497173ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  497181ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  497208ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  501538ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  501539ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  501539ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  501548ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  501577ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  505918ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  505918ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  505919ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  505928ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  505957ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  510286ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  510287ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  510287ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  510292ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  510308ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  514659ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  514660ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  514661ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  514669ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  514699ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  519032ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  519033ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  519033ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  519049ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  519094ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  523404ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  523404ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  523405ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  523414ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  523446ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  527783ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  527783ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  527785ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  527791ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  527795ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  532119ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  532120ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  532121ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  532129ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  532158ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  536487ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  536487ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  536488ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  536493ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  536496ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  540839ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  540839ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  540840ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  540845ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  540849ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  545202ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  545202ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  545203ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  545206ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  545210ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  549840ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  549841ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  549841ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  549842ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  549852ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  554195ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  554195ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  554196ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  554205ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  554237ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  558546ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  558546ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  558547ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  558548ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  558556ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  562923ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  562924ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  562924ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  562926ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  562936ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  567270ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  567270ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  567271ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  567279ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  567306ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  571654ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  571654ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  571655ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  571656ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  571664ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  576031ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  576032ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  576033ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  576043ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  576078ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  580384ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  580385ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  580386ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  580396ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  580429ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  584750ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  584751ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  584751ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  584758ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  584782ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  589144ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  589145ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  589146ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  589151ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  589155ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  593520ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  593521ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  593521ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  593528ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  593546ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  597893ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  597893ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  597894ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  597901ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  597924ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  602273ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  602273ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  602274ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  602281ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  602305ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  606638ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  606638ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  606639ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  606650ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  606682ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  611035ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  611035ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  611036ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  611040ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  611045ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  615418ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  615418ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  615418ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  615423ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  615427ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  619788ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  619788ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  619789ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  619793ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  619796ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  624133ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  624134ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  624134ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  624141ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  624163ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  628508ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  628508ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  628509ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  628520ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  628548ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  632869ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  632869ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  632870ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  632874ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  632877ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  637221ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  637222ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  637223ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  637232ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  637259ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  641590ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  641590ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  641591ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  641600ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  641632ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  645935ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  645936ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  645936ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  645944ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  645970ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  650282ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  650282ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  650283ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  650293ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  650326ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  654652ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  654652ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  654653ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  654661ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  654683ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  659009ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  659009ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  659010ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  659016ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  659035ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  663358ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  663358ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  663358ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  663365ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  663385ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  667244ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ http://localhost:8505/_stcore/health:0
+[  667245ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  667247ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  667261ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  667310ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ http://localhost:8505/_stcore/host-config:0
+[  671701ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  671701ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/host-config @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  671702ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  671711ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  671742ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  676079ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  676079ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  676080ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  676088ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  676114ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  680470ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  680471ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  680472ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  680482ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  680518ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  684848ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  684849ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  684849ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  684862ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  684912ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  689610ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  689610ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  689611ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  689620ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  689625ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  693963ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  693964ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  693964ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  693972ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  694001ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  698304ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  698305ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  698306ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  698316ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  698352ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  702676ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  702676ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  702677ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  702682ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  702686ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  707045ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  707046ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  707046ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  707054ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  707082ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  711395ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  711396ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  711396ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  711406ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  711436ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  715747ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  715748ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  715748ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  715757ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  715790ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  720111ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  720112ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  720112ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  720117ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  720120ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  724447ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  724447ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  724448ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  724457ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  724487ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  728831ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  728832ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  728835ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  728849ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  728897ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  733197ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  733197ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  733198ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  733207ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  733229ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  737552ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  737553ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  737554ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  737564ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  737600ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  741915ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  741915ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  741916ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  741923ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  741950ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  746267ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  746268ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  746268ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  746279ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  746309ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  750627ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  750627ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  750628ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  750636ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  750668ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  754981ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  754981ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  754982ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  754988ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  754993ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  759343ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  759344ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  759345ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  759356ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  759395ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  763696ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  763696ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  763697ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  763702ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  763706ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  768061ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  768062ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  768062ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  768076ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  768115ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  772429ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  772429ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  772430ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  772437ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  772442ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  776812ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  776812ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  776813ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  776823ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  776855ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  781216ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  781217ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  781217ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  781219ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  781230ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  785565ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  785565ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  785566ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  785567ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  785580ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  789946ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  789947ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  789948ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  789961ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  790016ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  794331ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  794332ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  794332ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  794345ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  794392ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  798668ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  798668ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  798669ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  798680ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  798715ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  803030ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  803030ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  803031ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  803041ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  803078ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  807384ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  807384ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  807385ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  807397ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  807435ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  811730ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  811731ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  811732ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  811742ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  811771ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  816095ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  816095ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  816096ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  816105ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  816138ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  820458ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  820459ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  820459ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  820460ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  820468ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  824829ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  824829ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  824830ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  824836ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  824842ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  829181ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  829182ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  829183ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  829193ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  829227ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  833551ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  833552ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  833553ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  833565ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  833610ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  837924ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  837925ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  837926ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  837936ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  837981ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  842343ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  842344ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  842344ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  842355ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  842402ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  846738ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  846738ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  846741ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  846750ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  846785ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  851141ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  851142ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  851143ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  851159ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  851217ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  855609ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  855609ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  855610ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  855621ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  855661ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  859992ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  859992ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  859993ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  860002ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  860042ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  864365ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  864366ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  864367ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  864378ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  864444ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  868740ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  868741ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  868741ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  868750ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  868784ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  873114ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  873115ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  873116ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  873129ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  873165ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  877589ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  877589ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  877590ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  877600ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  877634ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  882057ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  882058ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  882058ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  882067ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  882112ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  886463ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  886463ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  886464ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  886477ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  886525ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  890875ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  890876ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  890896ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  890920ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  890958ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  895307ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  895307ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  895308ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  895320ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  895353ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  899679ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  899680ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  899680ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  899696ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  899760ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  904071ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  904071ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  904072ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  904088ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  904136ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  908777ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  908780ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  908786ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  908815ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  909070ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  913841ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  913841ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  913842ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  913856ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  913894ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  918235ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  918235ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  918236ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  918261ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  918374ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  922611ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  922611ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  922612ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  922626ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  922660ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  926975ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  926976ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  926976ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  926992ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  927027ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  931352ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  931353ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  931353ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  931361ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  931390ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  935716ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  935716ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  935718ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  935760ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  935804ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  940103ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  940103ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  940104ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  940114ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  940158ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  944474ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  944474ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  944475ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  944489ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  944535ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  948851ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  948853ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  948854ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  948855ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  948862ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  953392ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  953392ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  953393ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  953400ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  953427ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  957754ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  957754ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  957755ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  957764ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  957797ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  962121ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  962122ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  962123ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  962136ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  962180ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  966501ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  966503ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  966505ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  966513ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  966521ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  971009ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  971010ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  971011ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  971040ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  971088ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  975438ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  975439ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  975440ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  975458ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  975510ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  980324ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  980324ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  980325ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  980345ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  980391ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  984774ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  984775ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  984776ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  984785ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  984792ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  989270ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  989271ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  989271ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  989286ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  989324ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  993681ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  993682ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  993683ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  993692ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  993726ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[  998080ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[  998080ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[  998081ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[  998092ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[  998158ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1002457ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1002457ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1002458ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1002476ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1002520ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1006872ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1006872ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1006873ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1006891ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1006959ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1011293ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1011294ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1011300ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1011316ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1011361ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1015701ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1015702ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1015703ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1015712ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1015742ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1020102ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1020103ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1020103ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1020112ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1020154ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1024498ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1024499ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1024499ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1024510ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1024570ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1028885ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1028886ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1028888ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1028907ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1028958ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1033313ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1033314ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1033315ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1033323ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1033331ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1037684ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1037685ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1037686ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1037687ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1037701ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1042070ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1042071ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1042072ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1042084ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1042124ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1046451ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1046452ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1046453ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1046454ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1046463ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1050818ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1050818ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1050819ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1050828ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1050883ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1055212ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1055213ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1055214ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1055225ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1055270ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1059559ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1059565ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1059566ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1059575ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1059616ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1063934ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1063935ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1063935ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1063946ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1063983ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1068305ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1068306ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1068307ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1068316ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1068349ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1072687ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1072687ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1072688ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1072699ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1072738ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1077113ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1077114ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1077115ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1077116ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1077125ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1081498ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1081500ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1081501ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1081516ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1081549ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1085885ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1085886ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1085886ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1085888ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1085899ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1090265ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1090266ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1090267ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1090282ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1090324ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1094648ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1094648ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1094649ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1094658ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1094683ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1099021ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1099022ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1099027ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1099029ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1099038ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1103403ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1103404ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1103405ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1103414ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1103418ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1107770ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1107771ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1107772ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1107772ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1107786ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1112139ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1112145ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1112146ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1112156ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1112222ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1116543ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1116543ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1116544ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1116550ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1116554ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1120895ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1120896ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1120896ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1120897ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1120904ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1125430ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1125430ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1125431ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1125432ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1125443ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1129801ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1129801ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1129802ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1129816ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1129854ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1134150ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1134151ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1134152ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1134162ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1134167ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1138515ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1138515ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1138516ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1138517ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1138529ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1142920ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1142921ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1142922ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1142932ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1142955ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1147513ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1147515ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1147516ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1147517ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1147529ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1151892ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1151893ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1151893ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1151898ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1151902ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1156320ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1156321ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1156321ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1156335ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1156389ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1160754ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1160765ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1160769ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1160789ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1160826ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1165186ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1165187ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1165188ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1165201ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1165243ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1169693ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1169693ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1169694ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1169695ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1169705ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1174128ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1174128ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1174129ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1174140ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1174236ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1178529ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1178530ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1178530ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1178541ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1178594ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1182985ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1182986ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1182987ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1182988ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1182999ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1187570ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1187575ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1187576ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1187585ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1187667ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1192019ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1192019ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1192020ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1192027ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1192074ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1196383ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1196383ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1196383ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1196384ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1196394ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1200747ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1200748ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1200748ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1200757ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1200796ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1205149ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1205151ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1205152ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1205174ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1205182ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1209508ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1209509ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1209509ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1209521ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1209565ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1213874ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1213874ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1213875ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1213877ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1213885ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1218274ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1218276ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1218277ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1218278ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1218288ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1222646ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1222647ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1222647ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1222662ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1222692ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1227096ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1227097ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1227098ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1227130ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1227192ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1231465ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1231465ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1231468ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1231491ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1231541ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1235895ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1235896ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1235898ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1235913ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1235951ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1240280ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1240280ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1240281ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1240281ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1240289ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1244797ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1244798ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1244798ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1244808ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1244840ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1249311ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1249311ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1249313ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1249333ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1249361ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1253666ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1253666ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1253667ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1253675ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1253697ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1258050ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1258052ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1258053ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1258054ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1258066ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1262441ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1262442ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1262443ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1262451ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1262476ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1266862ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1266862ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1266863ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1266864ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1266876ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1271265ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1271266ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1271271ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1271281ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1271287ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1275744ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1275744ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1275745ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1275754ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1275913ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1280464ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1280473ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1280473ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1280474ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1280479ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1284873ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1284874ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1284874ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1284879ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1284882ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1289329ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1289330ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1289331ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1289332ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1289341ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1293706ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1293706ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1293707ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1293718ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1293755ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1298158ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1298159ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1298160ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1298178ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1298215ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1302653ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1302654ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1302655ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1302656ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1302668ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1307072ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1307073ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1307073ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1307074ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1307083ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1311537ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1311537ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1311538ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1311539ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1311547ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1316017ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1316017ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1316017ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1316025ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1316028ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1320484ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1320484ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1320485ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1320490ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1320509ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1325019ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1325020ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1325020ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1325027ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1325052ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1329494ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1329495ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1329496ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1329504ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1329532ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1333829ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1333830ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1333830ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1333837ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1333840ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1338202ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1338203ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1338204ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1338212ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1338243ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1342633ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1342633ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1342634ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1342635ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1342645ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1347100ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1347101ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1347101ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1347102ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1347108ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1351574ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1351574ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1351575ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1351584ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1351641ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1355957ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1355958ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1355959ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1355973ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1356015ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1360332ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1360333ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1360334ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1360344ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1360374ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1364700ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1364701ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1364702ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1364715ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1364761ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1369159ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1369160ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1369161ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1369172ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1369184ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1373576ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1373578ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1373579ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1373583ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1373608ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1377933ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1377935ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1377936ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1377937ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1377947ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1382286ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1382287ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1382288ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1382289ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1382302ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1386665ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1386666ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1386667ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1386668ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1386680ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1391036ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1391037ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1391037ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1391050ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1391083ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1395438ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1395438ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1395439ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1395453ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1395502ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1399825ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1399826ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1399829ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1399833ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1399852ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1404190ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1404190ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1404191ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1404207ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1404225ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1408581ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1408581ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1408582ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1408584ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1408586ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1412949ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1412950ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1412951ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1412952ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1412965ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1417302ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1417302ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1417303ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1417304ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1417313ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1421681ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1421682ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1421683ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1421689ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1421694ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1426051ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1426052ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1426052ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1426058ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1426065ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1430425ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1430425ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1430427ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1430428ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1430438ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1434806ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1434806ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1434807ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1434808ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1434818ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1439168ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1439169ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1439170ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1439181ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1439220ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1443534ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1443534ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1443535ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1443545ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1443579ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1447936ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1447937ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1447938ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1447953ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1448002ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1452320ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1452320ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1452321ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1452333ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1452378ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1456789ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1456789ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1456790ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1456794ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1456807ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1461250ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1461251ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1461252ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1461263ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1461322ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1465749ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1465752ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1465753ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1465754ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1465795ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1470121ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1470122ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1470122ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1470123ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1470136ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1474503ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1474505ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1474506ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1474512ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1474523ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1478864ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1478865ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1478865ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1478875ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1478905ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1483238ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1483238ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1483239ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1483248ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1483266ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1487637ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1487638ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1487638ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1487639ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1487653ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1491969ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1491970ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1491970ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1491985ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1492020ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1496332ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1496332ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1496333ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1496346ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1496377ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1500724ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1500725ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1500725ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1500733ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1500755ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1505076ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1505077ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1505078ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1505080ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1505089ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1509428ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1509429ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1509430ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1509439ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1509469ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1513780ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1513780ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1513781ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1513783ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1513796ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1518129ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1518129ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1518130ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1518139ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
+[ 1518169ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1522543ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/health:0
+[ 1522543ms] [ERROR] Client Error in reaching server endpoint - No response received when attempting to reach /_stcore/health @ http://localhost:8505/static/js/index.k-9rUdPI.js:19
+[ 1522545ms] [ERROR] Is Streamlit still running? If you accidentally stopped Streamlit, just restart it in your terminal: @ http://localhost:8505/static/js/index.k-9rUdPI.js:24
+[ 1522546ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8505/_stcore/host-config:0
+[ 1522558ms] [WARNING] Invalid color passed for textColor in theme.sidebar: "" @ http://localhost:8505/static/js/utils.CU17Veq9.js:2
