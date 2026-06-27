@@ -142,45 +142,47 @@ def is_greeting(prompt: str) -> bool:
     return prompt.lower().strip().rstrip("!") in greetings
 
 
-def get_personalized_greeting() -> str:
-    """Generate personalized greeting based on user role and system status."""
-    user = get_current_user()
-    if not user:
-        return "Welcome to MultiMind AI.\n\nAsk me anything about your knowledge base."
-    
-    try:
-        report = run_knowledge_check()
-        doc_count = report.get("metrics", {}).get("total_documents", 47)
-        conflicts = sum(1 for i in report.get("issues", []) if i.get("issue_type") == "contradiction")
-        outdated = sum(1 for i in report.get("issues", []) if i.get("issue_type") == "outdated")
-    except Exception:
-        doc_count = 47
-        conflicts = 3
-        outdated = 12
-    
-    username = user.get("username", "there")
-    role = user.get("role", "guest")
-    
-    if role == "admin":
-        return f"""👋 Welcome back, {username.title()}.
+def is_unclear(prompt: str) -> bool:
+    """Check if user input is unclear/incomplete."""
+    unclear = ["what", "help", "thanks", "thank you", "thx", "bye", "goodbye"]
+    return prompt.lower().strip().rstrip("!") in unclear
 
-📊 {doc_count} documents indexed  ·  ⚠️ {conflicts} conflicts  ·  ⏳ {outdated} outdated
 
-What do you want to explore today?"""
-    
-    elif role == "guest":
-        return f"""Welcome to MultiMind AI, {username}.
+def get_greeting_response() -> str:
+    """Return the proper greeting response without confidence."""
+    return """👋 Welcome to **MultiMind AI**.
 
-You have read-only access to {doc_count} shared documents.
+I'm your enterprise knowledge assistant. I can help you:
 
-Ask me anything about the available knowledge base."""
-    
-    else:
-        return f"""👋 Welcome back, {username.title()}.
+* 📄 Search company documents
+* 🔍 Answer questions from the knowledge base
+* ⚠️ Detect conflicting information
+* 📊 Explain how confident I am in my answers
 
-📊 {doc_count} documents indexed  ·  ⚠️ {conflicts} conflicts  ·  ⏳ {outdated} outdated
+Try asking:
 
-What do you want to know today?"""
+* "What is our leave policy?"
+* "Summarize the HR handbook."
+* "Compare the 2024 and 2026 leave policies." """
+
+
+def get_unclear_response() -> str:
+    """Return clarification request for unclear inputs."""
+    return """I'm not sure what you're asking.
+
+Could you provide a little more detail?
+
+For example:
+
+* "What is our leave policy?"
+* "What is the travel reimbursement policy?"
+* "What documents are available?" """
+
+
+def is_business_question(prompt: str) -> bool:
+    """Check if input is a real business question."""
+    # If it's not a greeting or unclear, it's a business question
+    return not (is_greeting(prompt) or is_unclear(prompt))
 
 
 def render_chat_message(content, is_user=False, confidence=None):
@@ -189,6 +191,7 @@ def render_chat_message(content, is_user=False, confidence=None):
         st.markdown(f'<div class="chat-message-user">{content}</div>', unsafe_allow_html=True)
     else:
         st.markdown(f'<div class="chat-message-assistant">{content}</div>', unsafe_allow_html=True)
+        # Only show confidence for actual answers, not greetings/clarifications
         if confidence is not None:
             conf_pct = int(confidence * 100)
             conf_class = "confidence-high" if confidence >= 0.8 else ("confidence-medium" if confidence >= 0.6 else "confidence-low")
@@ -268,11 +271,17 @@ def render_chat_page():
         st.session_state.messages.append({"role": "user", "content": prompt})
         
         with st.spinner("Thinking..."):
-            # Check if greeting
+            # Query classifier - handle different types of inputs
             if is_greeting(prompt):
-                answer = get_personalized_greeting()
-                confidence = 1.0
+                # Greeting - no confidence score needed
+                answer = get_greeting_response()
+                confidence = None  # Don't show confidence for greetings
+            elif is_unclear(prompt):
+                # Unclear request - ask for clarification
+                answer = get_unclear_response()
+                confidence = None
             else:
+                # Real business question - run the pipeline
                 try:
                     user = get_current_user()
                     state: SharedState = {
@@ -317,7 +326,7 @@ def render_chat_page():
         st.session_state.messages.append({
             "role": "assistant",
             "content": answer,
-            "confidence": confidence,
+            "confidence": confidence,  # None means no confidence badge shown
         })
         st.rerun()
 
