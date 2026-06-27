@@ -22,33 +22,17 @@ class Intent(Enum):
 
 
 # Intent keyword lists
-GREETING_KEYWORDS = [
-    "hi", "hello", "hey", "greetings", "good morning", "good afternoon", 
-    "good evening", "yo", "howdy"
-]
+GREETING_KEYWORDS = ["hi", "hello", "hey", "greetings", "good morning", "good afternoon", "good evening"]
 
-SMALL_TALK_KEYWORDS = [
-    "how are you", "how are u", "what's up", "whats up", "how is your day",
-    "how's it going", "how are things", "nice to meet you"
-]
+SMALL_TALK_KEYWORDS = ["how are you", "how are u", "what's up", "whats up", "how is your day", "how's it going", "how are things"]
 
-THANKS_KEYWORDS = [
-    "thank you", "thanks", "thx", "ty", "thank you so much"
-]
+THANKS_KEYWORDS = ["thank you", "thanks", "thx", "ty", "thank you so much"]
 
-GOODBYE_KEYWORDS = [
-    "bye", "goodbye", "see you", "see ya", "good night", "later", "farewell", "peace"
-]
+GOODBYE_KEYWORDS = ["bye", "goodbye", "see you", "see ya", "good night", "later", "farewell"]
 
-IDENTITY_KEYWORDS = [
-    "who are you", "what are you", "who is this", "what is this"
-]
+IDENTITY_KEYWORDS = ["who are you", "what are you", "who is this", "what is this"]
 
-CODING_KEYWORDS = [
-    "code", "coding", "script", "function", "class", "python", "javascript",
-    "java", "c++", "debug", "error", "bug", "implement", "algorithm",
-    "write code", "write a function", "api", "django", "react", "node.js"
-]
+CODING_KEYWORDS = ["code", "coding", "script", "function", "class", "python", "javascript", "java", "c++", "debug", "error", "bug", "implement", "api", "django", "react"]
 
 QUESTION_WORDS = ["what", "how", "why", "when", "where", "who", "which", "can you"]
 
@@ -56,15 +40,10 @@ QUESTION_WORDS = ["what", "how", "why", "when", "where", "who", "which", "can yo
 def classify_intent(prompt: str) -> Tuple[Intent, str]:
     """
     Classify user input into an intent.
-    
-    Returns:
-        Tuple of (Intent, response_text or None)
-        For conversational intents, returns the response text.
-        For query intents, returns None.
     """
     prompt_lower = prompt.lower().strip().rstrip("!").rstrip("?")
     
-    # Check identity questions first
+    # Check identity questions
     for keyword in IDENTITY_KEYWORDS:
         if keyword in prompt_lower:
             return Intent.IDENTITY, get_identity_response()
@@ -74,7 +53,7 @@ def classify_intent(prompt: str) -> Tuple[Intent, str]:
         if keyword in prompt_lower:
             return Intent.THANKS, get_thanks_response()
     
-    # Check greetings - exact match or starts with
+    # Check greetings
     for keyword in GREETING_KEYWORDS:
         if prompt_lower == keyword or prompt_lower.startswith(keyword + " "):
             return Intent.GREETING, get_greeting_response()
@@ -84,8 +63,8 @@ def classify_intent(prompt: str) -> Tuple[Intent, str]:
         if keyword in prompt_lower:
             return Intent.SMALL_TALK, get_small_talk_response()
     
-    # Check help - this is handled as help, not unknown
-    if "what can you do" in prompt_lower or "what can you help" in prompt_lower:
+    # Check help
+    if "what can you do" in prompt_lower or "help" in prompt_lower:
         return Intent.HELP, get_help_response()
     
     # Check goodbye
@@ -98,73 +77,56 @@ def classify_intent(prompt: str) -> Tuple[Intent, str]:
         if keyword in prompt_lower:
             return Intent.CODING_QUERY, None
     
-    # Check if it's a real business question
+    # Check business questions
     if any(prompt_lower.startswith(q) for q in QUESTION_WORDS):
-        # Filter out incomplete/unclear questions
         if len(prompt.split()) < 3 and prompt_lower.split()[0] in QUESTION_WORDS:
             return Intent.UNKNOWN, get_natural_unclear_response()
         return Intent.ENTERPRISE_QUERY, None
     
-    # Default: if it looks like a statement about knowledge/docs, treat as enterprise query
-    knowledge_keywords = ["policy", "document", "leave", "handbook", "sop", "rule", "procedure", "knowledge", "hr", "benefits", "salary"]
+    # Default detection
+    knowledge_keywords = ["policy", "document", "leave", "handbook", "sop", "hr", "benefits", "salary"]
     if any(kw in prompt_lower for kw in knowledge_keywords):
         return Intent.ENTERPRISE_QUERY, None
     
-    # Unclear input - but respond naturally
     if len(prompt.strip()) < 5 or prompt_lower in ["what", "how", "why"]:
         return Intent.UNKNOWN, get_natural_unclear_response()
     
-    # Default to enterprise query if it seems like a request
     return Intent.ENTERPRISE_QUERY, None
 
 
 def get_greeting_response() -> str:
-    """Response for greetings - friendly and direct."""
-    return """Hey there! 😊
-
-What can I help you with today?"""
+    """NATURAL greeting - like ChatGPT would reply."""
+    return "Hey! What's up? How can I help you today?"
 
 
 def get_small_talk_response() -> str:
-    """Response for small talk - natural conversation."""
-    return """I'm doing great, thanks for asking! 
-
-I'm ready when you are - just let me know what you'd like to dive into."""
+    """NATURAL small talk - like a friend replying."""
+    return "I'm good, thanks! Just hanging out here ready to help. What's on your mind?"
 
 
 def get_thanks_response() -> str:
-    """Response for thanks - warm and encouraging."""
-    return """Anytime! 
-
-Anything else I can help with?"""
+    """NATURAL thanks response."""
+    return "You're welcome! Anything else I can help with?"
 
 
 def get_identity_response() -> str:
-    """Response for identity questions - clear but friendly."""
-    return """I'm MultiMind AI!
-
-I'm your go-to for searching company docs, answering policy questions, or comparing documents. Think of me as your knowledge base assistant."""
+    """NATURAL identity response."""
+    return "I'm MultiMind AI - I help you search through your company documents and answer questions about policies."
 
 
 def get_help_response() -> str:
-    """Response for help requests - simple guidance."""
-    return """Happy to help!
-
-Just ask me about anything in your organization's knowledge base - policies, procedures, or documents."""
+    """NATURAL help response."""
+    return "I can help you find info in your company docs, answer policy questions, or compare documents. What do you need?"
 
 
 def get_goodbye_response() -> str:
-    """Response for goodbyes - warm sign-off."""
-    return """See you later! 👋
-
-Come back anytime you need to dig into your docs."""
+    """NATURAL goodbye response."""
+    return "Take care! Catch you later."
 
 
 def get_natural_unclear_response() -> str:
-    """Natural response for unclear inputs - conversational, not robotic."""
-    return """Hey! What's on your mind?
-
-Ask me something like "What's our leave policy?" or "Find docs about PTO" """
+    """NATURAL unclear response - like ChatGPT."""
+    return "Hmm, I'm not quite following. Could you give me a bit more to go on? Maybe ask about a policy or document?"
 
 
 def get_intent_label(intent: Intent) -> str:
