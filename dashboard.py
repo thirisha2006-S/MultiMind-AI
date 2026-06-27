@@ -18,6 +18,7 @@ from multimodal import get_multimodal_processor
 from parsers import parse_document, get_supported_document_types
 from confidence_explainer import get_confidence_explainer
 from knowledge_doctor import run_knowledge_check
+from intent_classifier import classify_intent, Intent
 from graph import app
 from state import SharedState
 from langchain_core.messages import HumanMessage
@@ -136,55 +137,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-def is_greeting(prompt: str) -> bool:
-    """Check if user input is a greeting."""
-    greetings = ["hi", "hello", "hey", "greetings", "good morning", "good afternoon", "good evening"]
-    return prompt.lower().strip().rstrip("!") in greetings
-
-
-def is_unclear(prompt: str) -> bool:
-    """Check if user input is unclear/incomplete."""
-    unclear = ["what", "help", "thanks", "thank you", "thx", "bye", "goodbye"]
-    return prompt.lower().strip().rstrip("!") in unclear
-
-
-def get_greeting_response() -> str:
-    """Return the proper greeting response without confidence."""
-    return """👋 Welcome to **MultiMind AI**.
-
-I'm your enterprise knowledge assistant. I can help you:
-
-* 📄 Search company documents
-* 🔍 Answer questions from the knowledge base
-* ⚠️ Detect conflicting information
-* 📊 Explain how confident I am in my answers
-
-Try asking:
-
-* "What is our leave policy?"
-* "Summarize the HR handbook."
-* "Compare the 2024 and 2026 leave policies." """
-
-
-def get_unclear_response() -> str:
-    """Return clarification request for unclear inputs."""
-    return """I'm not sure what you're asking.
-
-Could you provide a little more detail?
-
-For example:
-
-* "What is our leave policy?"
-* "What is the travel reimbursement policy?"
-* "What documents are available?" """
-
-
-def is_business_question(prompt: str) -> bool:
-    """Check if input is a real business question."""
-    # If it's not a greeting or unclear, it's a business question
-    return not (is_greeting(prompt) or is_unclear(prompt))
-
-
 def render_chat_message(content, is_user=False, confidence=None):
     """Render a chat message in ChatGPT style."""
     if is_user:
@@ -271,17 +223,54 @@ def render_chat_page():
         st.session_state.messages.append({"role": "user", "content": prompt})
         
         with st.spinner("Thinking..."):
-            # Query classifier - handle different types of inputs
-            if is_greeting(prompt):
-                # Greeting - no confidence score needed
-                answer = get_greeting_response()
-                confidence = None  # Don't show confidence for greetings
-            elif is_unclear(prompt):
-                # Unclear request - ask for clarification
-                answer = get_unclear_response()
+            # Intent Classifier - natural conversation handling
+            intent, response = classify_intent(prompt)
+            
+            if response is not None:
+                # Conversational response - no pipeline needed
+                answer = response
                 confidence = None
+            elif intent == Intent.CODING_QUERY:
+                # Route to coding mode
+                try:
+                    user = get_current_user()
+                    state: SharedState = {
+                        "messages": [HumanMessage(content=prompt)],
+                        "task_type": "coding",
+                        "retry_count": 0,
+                        "max_retries": 3,
+                        "metadata": {"session_id": "default"},
+                        "planner_ran": False,
+                        "task_plan": None,
+                        "plan_reasoning": None,
+                        "current_task_index": 0,
+                        "reflection": None,
+                        "workflow_quality": 0.0,
+                        "sources": [],
+                        "confidence": 0.5,
+                        "adaptive_skipped": True,
+                        "pending_approval": False,
+                        "approval_request_id": None,
+                        "approval_required_for": None,
+                        "security_scan": None,
+                        "feedback_collected": False,
+                        "feedback_id": None,
+                        "evolution_timeline": None,
+                        "user": {
+                            "user_id": user["user_id"] if user else "guest",
+                            "username": user["username"] if user else "guest",
+                            "role": user["role"] if user else "guest",
+                            "session_id": "default",
+                        },
+                    }
+                    result = app.invoke(state)
+                    answer = result.get("final_answer") or result.get("code_result") or "No response generated"
+                    confidence = result.get("confidence", 0.5)
+                except Exception as e:
+                    answer = f"Error: {str(e)}"
+                    confidence = 0.5
             else:
-                # Real business question - run the pipeline
+                # Enterprise query - run the research pipeline
                 try:
                     user = get_current_user()
                     state: SharedState = {
