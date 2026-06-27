@@ -118,7 +118,7 @@ def is_demo_mode() -> bool:
 
 
 class MockLLMCoding:
-    """Mock LLM for coding mode in demo."""
+    """Mock LLM for coding mode in demo - responds naturally to all inputs."""
     
     def invoke(self, messages):
         # Extract user query - look for HumanMessage specifically, not just any message
@@ -131,12 +131,24 @@ class MockLLMCoding:
                 # Fallback to any message as last resort
                 query = msg.content
         
-        # Simple mock responses for coding tasks
-        if "factorial" in query.lower():
+        query_lower = query.lower().strip().rstrip("!").rstrip("?")
+        
+        # Natural responses for conversation
+        if query_lower in ["hi", "hello", "hey"]:
+            return AIMessage(content="Hey! How can I help you today?")
+        elif query_lower in ["thanks", "thank you"]:
+            return AIMessage(content="You're welcome! Anything else I can help with?")
+        elif query_lower in ["bye", "goodbye"]:
+            return AIMessage(content="See you! Come back anytime.")
+        elif "how are you" in query_lower:
+            return AIMessage(content="I'm doing well, thanks for asking! What can I help you with?")
+        elif "who are you" in query_lower or "what are you" in query_lower:
+            return AIMessage(content="I'm MultiMind AI - your go-to for searching company documents and answering policy questions.")
+        elif "factorial" in query_lower:
             return AIMessage(content="```python\ndef factorial(n):\n    return 1 if n <= 1 else n * factorial(n - 1)\n\nprint(factorial(10))  # 3628800\n```")
-        elif "bmi" in query.lower():
+        elif "bmi" in query_lower:
             return AIMessage(content="```python\ndef calculate_bmi(weight_kg, height_m):\n    return weight_kg / (height_m ** 2)\n\n# Example: weight=70kg, height=1.75m\nbmi = calculate_bmi(70, 1.75)\nprint(f\"BMI: {bmi:.1f}\")\n```")
-        elif "python" in query.lower() or "code" in query.lower():
+        elif "python" in query_lower or "code" in query_lower:
             return AIMessage(content=f"Here's a Python solution:\n\n```python\n# Code for: {query}\nprint('Working on it!')\n```")
         
         return AIMessage(content=f"Answer for: {query}")

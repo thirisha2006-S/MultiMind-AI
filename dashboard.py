@@ -223,99 +223,61 @@ def render_chat_page():
         st.session_state.messages.append({"role": "user", "content": prompt})
         
         with st.spinner("Thinking..."):
-            # Intent Classifier - natural conversation handling
-            intent, response = classify_intent(prompt)
+            intent, _ = classify_intent(prompt)
             
-            if response is not None:
-                # Conversational response - no pipeline needed
-                answer = response
-                confidence = None
-            elif intent == Intent.CODING_QUERY:
-                # Route to coding mode
-                try:
-                    user = get_current_user()
-                    state: SharedState = {
-                        "messages": [HumanMessage(content=prompt)],
-                        "task_type": "coding",
-                        "retry_count": 0,
-                        "max_retries": 3,
-                        "metadata": {"session_id": "default"},
-                        "planner_ran": False,
-                        "task_plan": None,
-                        "plan_reasoning": None,
-                        "current_task_index": 0,
-                        "reflection": None,
-                        "workflow_quality": 0.0,
-                        "sources": [],
-                        "confidence": 0.5,
-                        "adaptive_skipped": True,
-                        "pending_approval": False,
-                        "approval_request_id": None,
-                        "approval_required_for": None,
-                        "security_scan": None,
-                        "feedback_collected": False,
-                        "feedback_id": None,
-                        "evolution_timeline": None,
-                        "user": {
-                            "user_id": user["user_id"] if user else "guest",
-                            "username": user["username"] if user else "guest",
-                            "role": user["role"] if user else "guest",
-                            "session_id": "default",
-                        },
-                    }
-                    result = app.invoke(state)
-                    answer = result.get("final_answer") or result.get("code_result") or "No response generated"
-                    confidence = result.get("confidence", 0.5)
-                except Exception as e:
-                    answer = f"Error: {str(e)}"
-                    confidence = 0.5
-            else:
-                # Enterprise query - run the research pipeline
-                try:
-                    user = get_current_user()
-                    state: SharedState = {
-                        "messages": [HumanMessage(content=prompt)],
-                        "task_type": "research",
-                        "retry_count": 0,
-                        "max_retries": 3,
-                        "metadata": {"session_id": "default"},
-                        "planner_ran": False,
-                        "task_plan": None,
-                        "plan_reasoning": None,
-                        "current_task_index": 0,
-                        "reflection": None,
-                        "workflow_quality": 0.0,
-                        "sources": [],
-                        "confidence": 0.5,
-                        "adaptive_skipped": True,
-                        "pending_approval": False,
-                        "approval_request_id": None,
-                        "approval_required_for": None,
-                        "security_scan": None,
-                        "feedback_collected": False,
-                        "feedback_id": None,
-                        "evolution_timeline": None,
-                        "user": {
-                            "user_id": user["user_id"] if user else "guest",
-                            "username": user["username"] if user else "guest",
-                            "role": user["role"] if user else "guest",
-                            "session_id": "default",
-                        },
-                    }
-                    result = app.invoke(state)
-                    answer = result.get("final_answer") or "No response generated"
-                    confidence = result.get("confidence", 0.5)
+            user = get_current_user()
+            task_type = "research"
+            if intent == Intent.CODING_QUERY:
+                task_type = "coding"
+            
+            try:
+                state: SharedState = {
+                    "messages": [HumanMessage(content=prompt)],
+                    "task_type": task_type,
+                    "retry_count": 0,
+                    "max_retries": 3,
+                    "metadata": {"session_id": "default"},
+                    "planner_ran": False,
+                    "task_plan": None,
+                    "plan_reasoning": None,
+                    "current_task_index": 0,
+                    "reflection": None,
+                    "workflow_quality": 0.0,
+                    "sources": [],
+                    "confidence": 0.5,
+                    "adaptive_skipped": True,
+                    "pending_approval": False,
+                    "approval_request_id": None,
+                    "approval_required_for": None,
+                    "security_scan": None,
+                    "feedback_collected": False,
+                    "feedback_id": None,
+                    "evolution_timeline": None,
+                    "user": {
+                        "user_id": user["user_id"] if user else "guest",
+                        "username": user["username"] if user else "guest",
+                        "role": user["role"] if user else "guest",
+                        "session_id": "default",
+                    },
+                }
+                result = app.invoke(state)
+                answer = result.get("final_answer") or result.get("code_result") or "No response generated"
+                confidence = result.get("confidence", 0.5)
+                
+                # No confidence shown for conversational replies
+                if intent == Intent.CONVERSATION:
+                    confidence = None
                     
-                    if is_demo_mode():
-                        answer += "\n\n* — Demo mode*"
-                except Exception as e:
-                    answer = f"Error: {str(e)}"
-                    confidence = 0.5
+                if is_demo_mode() and intent != Intent.CONVERSATION:
+                    answer += "\n\n* — Demo mode*"
+            except Exception as e:
+                answer = f"Error: {str(e)}"
+                confidence = 0.5
         
         st.session_state.messages.append({
             "role": "assistant",
             "content": answer,
-            "confidence": confidence,  # None means no confidence badge shown
+            "confidence": confidence,
         })
         st.rerun()
 
