@@ -1,0 +1,55 @@
+- generic [ref=e2]:
+  - generic [ref=e37]:
+    - generic [ref=e42]:
+      - generic [ref=e43]: 🤖
+      - generic [ref=e44]: MultiMind AI
+    - alert [ref=e47]:
+      - paragraph [ref=e52]: Please login to access the dashboard.
+  - generic [ref=e3]:
+    - banner [ref=e6]:
+      - generic [ref=e9]:
+        - button "Deploy" [ref=e20] [cursor=pointer]:
+          - generic [ref=e22]: Deploy
+        - button "Main menu" [ref=e24] [cursor=pointer]:
+          - img [ref=e25]
+    - generic [ref=e57]:
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - generic [ref=e66]: 🧠
+          - heading "MultiMind AI" [level=1] [ref=e68]:
+            - text: MultiMind AI
+            - generic [ref=e69]:
+              - link "Link to heading":
+                - /url: "#multi-mind-ai"
+                - img
+          - paragraph [ref=e70]: Secure Enterprise Knowledge Platform
+        - code [ref=e75]: "<div class=\"feature-item\"> <div class=\"feature-icon\">🩺</div> <span style=\"font-size: 13px; color: #C9D1D9;\">Knowledge Doctor AI — proactive monitoring</span> </div> <div class=\"feature-item\"> <div class=\"feature-icon\">⚠️</div> <span style=\"font-size: 13px; color: #C9D1D9;\">Conflict-Aware AI — flags contradictions</span> </div> <div class=\"feature-item\"> <div class=\"feature-icon\">📊</div> <span style=\"font-size: 13px; color: #C9D1D9;\">Explainable confidence — transparent scoring</span> </div> <div class=\"feature-item\"> <div class=\"feature-icon\">📜</div> <span style=\"font-size: 13px; color: #C9D1D9;\">Knowledge evolution — tracks policy changes</span> </div> <div class=\"feature-item\"> <div class=\"feature-icon\">🔐</div> <span style=\"font-size: 13px; color: #C9D1D9;\">Enterprise security — RBAC + audit logs</span> </div> <p style=\"text-align: center; margin-top: 2rem; font-size: 11px; color: #484F58;\">v1.0 · Enterprise Edition</p>"
+      - generic [ref=e77]:
+        - generic [ref=e83]:
+          - heading "Sign in" [level=2] [ref=e85]:
+            - text: Sign in
+            - generic [ref=e86]:
+              - link "Link to heading":
+                - /url: "#sign-in"
+                - img
+          - paragraph [ref=e87]: Access your knowledge workspace
+        - generic [ref=e89]:
+          - paragraph [ref=e93]: Username
+          - textbox "Username" [ref=e96]:
+            - /placeholder: Enter username
+        - generic [ref=e98]:
+          - paragraph [ref=e102]: Password
+          - generic [ref=e104]:
+            - textbox "Password" [ref=e105]:
+              - /placeholder: Enter password
+            - button "Show password text" [ref=e106] [cursor=pointer]:
+              - img "Show password text" [ref=e107]
+        - button "Sign in" [ref=e115] [cursor=pointer]:
+          - paragraph [ref=e119]: Sign in
+        - button "Guest Access" [ref=e126] [cursor=pointer]:
+          - paragraph [ref=e130]: Guest Access
+        - generic [ref=e137]:
+          - generic [ref=e138]:
+            - generic [ref=e139]: ℹ️
+            - generic [ref=e140]: "Demo credentials:"
+          - generic [ref=e141]: admin / admin123 | guest / guest123
